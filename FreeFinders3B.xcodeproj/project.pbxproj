@@ -16,6 +16,13 @@
 		484DC4A92919C84700AE095B /* FreeFinders3BTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484DC4A82919C84700AE095B /* FreeFinders3BTests.swift */; };
 		484DC4B32919C84700AE095B /* FreeFinders3BUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484DC4B22919C84700AE095B /* FreeFinders3BUITests.swift */; };
 		484DC4B52919C84700AE095B /* FreeFinders3BUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484DC4B42919C84700AE095B /* FreeFinders3BUITestsLaunchTests.swift */; };
+		E1B751C82919D1100022D259 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1B751C72919D1100022D259 /* GoogleService-Info.plist */; };
+		E1B751CB2919D15E0022D259 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = E1B751CA2919D15E0022D259 /* FirebaseAnalytics */; };
+		E1B751CD2919D15E0022D259 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E1B751CC2919D15E0022D259 /* FirebaseAuth */; };
+		E1B751CF2919D15E0022D259 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = E1B751CE2919D15E0022D259 /* FirebaseDatabase */; };
+		E1B751D12919D15E0022D259 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E1B751D02919D15E0022D259 /* FirebaseDatabaseSwift */; };
+		E1B751D32919D15E0022D259 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = E1B751D22919D15E0022D259 /* FirebaseStorage */; };
+		E1B751D52919D15E0022D259 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = E1B751D42919D15E0022D259 /* FirebaseStorageCombine-Community */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,7 @@
 		484DC4AE2919C84700AE095B /* FreeFinders3BUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreeFinders3BUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		484DC4B22919C84700AE095B /* FreeFinders3BUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeFinders3BUITests.swift; sourceTree = "<group>"; };
 		484DC4B42919C84700AE095B /* FreeFinders3BUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeFinders3BUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E1B751C72919D1100022D259 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1B751D12919D15E0022D259 /* FirebaseDatabaseSwift in Frameworks */,
+				E1B751CF2919D15E0022D259 /* FirebaseDatabase in Frameworks */,
+				E1B751CB2919D15E0022D259 /* FirebaseAnalytics in Frameworks */,
+				E1B751D32919D15E0022D259 /* FirebaseStorage in Frameworks */,
+				E1B751D52919D15E0022D259 /* FirebaseStorageCombine-Community in Frameworks */,
+				E1B751CD2919D15E0022D259 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +93,7 @@
 		484DC4852919C84600AE095B = {
 			isa = PBXGroup;
 			children = (
+				E1B751C72919D1100022D259 /* GoogleService-Info.plist */,
 				484DC4902919C84600AE095B /* FreeFinders3B */,
 				484DC4A72919C84700AE095B /* FreeFinders3BTests */,
 				484DC4B12919C84700AE095B /* FreeFinders3BUITests */,
@@ -143,6 +158,14 @@
 			dependencies = (
 			);
 			name = FreeFinders3B;
+			packageProductDependencies = (
+				E1B751CA2919D15E0022D259 /* FirebaseAnalytics */,
+				E1B751CC2919D15E0022D259 /* FirebaseAuth */,
+				E1B751CE2919D15E0022D259 /* FirebaseDatabase */,
+				E1B751D02919D15E0022D259 /* FirebaseDatabaseSwift */,
+				E1B751D22919D15E0022D259 /* FirebaseStorage */,
+				E1B751D42919D15E0022D259 /* FirebaseStorageCombine-Community */,
+			);
 			productName = FreeFinders3B;
 			productReference = 484DC48E2919C84600AE095B /* FreeFinders3B.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +238,9 @@
 				Base,
 			);
 			mainGroup = 484DC4852919C84600AE095B;
+			packageReferences = (
+				E1B751C92919D15E0022D259 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 484DC48F2919C84600AE095B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				484DC49E2919C84700AE095B /* LaunchScreen.storyboard in Resources */,
+				E1B751C82919D1100022D259 /* GoogleService-Info.plist in Resources */,
 				484DC49B2919C84700AE095B /* Assets.xcassets in Resources */,
 				484DC4992919C84600AE095B /* Main.storyboard in Resources */,
 			);
@@ -366,7 +393,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +447,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -502,7 +529,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FreeFinders3B.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FreeFinders3B";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FreeFinders3B.app/FreeFinders3B";
 			};
 			name = Debug;
 		};
@@ -522,7 +549,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FreeFinders3B.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FreeFinders3B";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FreeFinders3B.app/FreeFinders3B";
 			};
 			name = Release;
 		};
@@ -602,6 +629,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E1B751C92919D15E0022D259 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E1B751CA2919D15E0022D259 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E1B751C92919D15E0022D259 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		E1B751CC2919D15E0022D259 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E1B751C92919D15E0022D259 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		E1B751CE2919D15E0022D259 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E1B751C92919D15E0022D259 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		E1B751D02919D15E0022D259 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E1B751C92919D15E0022D259 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		E1B751D22919D15E0022D259 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E1B751C92919D15E0022D259 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		E1B751D42919D15E0022D259 /* FirebaseStorageCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E1B751C92919D15E0022D259 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageCombine-Community";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 484DC4862919C84600AE095B /* Project object */;
 }

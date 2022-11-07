@@ -6,15 +6,61 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseCore
+
+
+class User {
+    var id : String
+    var email : String
+    var ref: DatabaseReference!
+
+    init(id: String, email: String){
+        self.id = id
+        self.email = email
+    }
+    
+    func create_item(){
+        
+    }
+    func comment(item_id: String, comment: String)-> Bool{
+        let ref = Database.database().reference()
+
+        var ret = false
+        if (comment == ""){
+            ret = false  // cannot have empty comment
+        }
+        else{
+            // need to fix
+            
+            ref.child("items/\(item_id)").observeSingleEvent(of: .value, with: {(snapshot) in
+                if snapshot.exists(){
+                    guard let key = ref.child("items").child(item_id).child("comments").childByAutoId().key else {return}
+                    ref.updateChildValues(["/items/\(item_id)/comments/\(key)" : comment])
+                    ret = true
+                }else{
+                    ret = false
+                }
+            })
+        }
+        return ret
+    }
+}
+
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        return true
+    var window: UIWindow?
+
+    func application(_ application: UIApplication,
+      didFinishLaunchingWithOptions launchOptions:
+                     [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+      FirebaseApp.configure()
+
+      return true
     }
 
     // MARK: UISceneSession Lifecycle
@@ -33,4 +79,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
-
