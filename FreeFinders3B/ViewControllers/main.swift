@@ -9,10 +9,11 @@ import SwiftUI
 import GoogleSignIn
 import MapKit
 
-public func refresh()-> [Item]{
+func refresh()-> [Item]{
     let items = db_get_all_items()
     for item in items{
-        itemMap.addAnnotation(item)
+        continue
+        //itemMap.addAnnotation(item)
     }
     return items
 }
