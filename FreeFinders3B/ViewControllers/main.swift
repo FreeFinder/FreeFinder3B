@@ -19,7 +19,7 @@ func refresh()-> [Item]{
     return items
 }
 
-private func db_get_all_items()->[Item]{
+func db_get_all_items()->[Item]{
     // for each item in database, initialize an item object and put in list
     return []
 }
@@ -56,7 +56,7 @@ class User {
         db_add_user()
     }
     
-    private func db_add_user(){
+    func db_add_user(){
         // add user, user might already exist (depends on sign in sign out stuff)
     }
     
@@ -66,7 +66,8 @@ class User {
             
     func create_item(name: String?, type: String?, detail: String?, coordinate: CLLocationCoordinate2D) -> Bool{
         // check field validity
-        _ = Item(name: name,type: type,detail: detail,coordinate: coordinate,creator: self)
+        let i = Item(name: name,type: type,detail: detail,coordinate: coordinate,creator: self)
+        i.db_add_item()
         refresh()
         return true
     }
@@ -108,7 +109,7 @@ class Item: NSObject, MKAnnotation{
         self.id = ""
         
         super.init()
-        db_add_item()
+        // db_add_item() //moved this to create_item
     }
     
     var title: String?{
@@ -119,27 +120,27 @@ class Item: NSObject, MKAnnotation{
         return type
     }
     
-    private func db_add_item(){
+    func db_add_item(){
         // add self to DB
     }
     
-    private func db_item_exists()-> Bool{
+    func db_item_exists()-> Bool{
         // check if item is in db still
         return true
     }
     
-    private func db_delete_item() -> Bool{
+    func db_delete_item() -> Bool{
         // delete self from DB
         // returns success of deltion
         return true
     }
     
-    private func db_get_comments()->[String]{
+    func db_get_comments()->[String]{
         // get current comments
         return []
     }
     
-    private func db_add_comment(c : String){
+    func db_add_comment(c : String){
         // add passed comment to db
     }
     
