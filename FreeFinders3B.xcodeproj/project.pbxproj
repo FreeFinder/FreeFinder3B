@@ -26,9 +26,9 @@
 		734303242919CD260064974F /* ViewControllers in Resources */ = {isa = PBXBuildFile; fileRef = 734303232919CD260064974F /* ViewControllers */; };
 		734303252919CD260064974F /* ViewControllers in Resources */ = {isa = PBXBuildFile; fileRef = 734303232919CD260064974F /* ViewControllers */; };
 		734303262919CD260064974F /* ViewControllers in Resources */ = {isa = PBXBuildFile; fileRef = 734303232919CD260064974F /* ViewControllers */; };
-		734303282919D4CC0064974F /* ViewItem.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 734303272919D4CC0064974F /* ViewItem.storyboard */; };
-		734303292919D4CC0064974F /* ViewItem.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 734303272919D4CC0064974F /* ViewItem.storyboard */; };
-		7343032A2919D4CC0064974F /* ViewItem.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 734303272919D4CC0064974F /* ViewItem.storyboard */; };
+		738572BB2919F50000D0F5B5 /* ViewItem.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 738572BA2919F50000D0F5B5 /* ViewItem.storyboard */; };
+		738572BC2919F50000D0F5B5 /* ViewItem.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 738572BA2919F50000D0F5B5 /* ViewItem.storyboard */; };
+		738572BD2919F50000D0F5B5 /* ViewItem.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 738572BA2919F50000D0F5B5 /* ViewItem.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +66,7 @@
 		734303152919CCC90064974F /* CreateItemView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CreateItemView.storyboard; sourceTree = "<group>"; };
 		734303192919CCD00064974F /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		734303232919CD260064974F /* ViewControllers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ViewControllers; sourceTree = "<group>"; };
-		734303272919D4CC0064974F /* ViewItem.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ViewItem.storyboard; path = ../../../FreeFinderMilestone3B/FreeFinderMilestone3B/ViewItem.storyboard; sourceTree = "<group>"; };
+		738572BA2919F50000D0F5B5 /* ViewItem.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ViewItem.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,7 +153,7 @@
 				5A7713AA2919F20C00040D8A /* List.storyboard */,
 				734303152919CCC90064974F /* CreateItemView.storyboard */,
 				734303192919CCD00064974F /* Profile.storyboard */,
-				734303272919D4CC0064974F /* ViewItem.storyboard */,
+				738572BA2919F50000D0F5B5 /* ViewItem.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -264,9 +264,9 @@
 			files = (
 				484DC49E2919C84700AE095B /* LaunchScreen.storyboard in Resources */,
 				484DC49B2919C84700AE095B /* Assets.xcassets in Resources */,
+				738572BB2919F50000D0F5B5 /* ViewItem.storyboard in Resources */,
 				5A7713AB2919F20C00040D8A /* List.storyboard in Resources */,
 				734303242919CD260064974F /* ViewControllers in Resources */,
-				734303282919D4CC0064974F /* ViewItem.storyboard in Resources */,
 				7343031A2919CCD00064974F /* Profile.storyboard in Resources */,
 				734303162919CCC90064974F /* CreateItemView.storyboard in Resources */,
 				484DC4992919C84600AE095B /* Main.storyboard in Resources */,
@@ -279,7 +279,7 @@
 			files = (
 				7343031B2919CCD00064974F /* Profile.storyboard in Resources */,
 				734303252919CD260064974F /* ViewControllers in Resources */,
-				734303292919D4CC0064974F /* ViewItem.storyboard in Resources */,
+				738572BC2919F50000D0F5B5 /* ViewItem.storyboard in Resources */,
 				734303172919CCC90064974F /* CreateItemView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,7 +290,7 @@
 			files = (
 				7343031C2919CCD00064974F /* Profile.storyboard in Resources */,
 				734303262919CD260064974F /* ViewControllers in Resources */,
-				7343032A2919D4CC0064974F /* ViewItem.storyboard in Resources */,
+				738572BD2919F50000D0F5B5 /* ViewItem.storyboard in Resources */,
 				734303182919CCC90064974F /* CreateItemView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
