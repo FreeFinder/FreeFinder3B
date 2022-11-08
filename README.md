@@ -20,5 +20,5 @@ Iteration 2 will include the following features:
 * Notifications (and preferences)
 * Filtering
 * UI/UX Improvements
-* Adding photos (?)
+* Adding photos (?) -- we are unsure if we can get the capability to store images somewhere, so this feature might be dropped
 ### (8) Other information 
