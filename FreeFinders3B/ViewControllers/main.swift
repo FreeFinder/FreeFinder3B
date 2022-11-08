@@ -27,17 +27,17 @@ private func db_get_all_items()->[Item]{
 
 func sign_in() -> User?{
     
-    GIDSignIn.sharedInstance().restorePreviousSignIn()
-    var u = GIDSignIn.sharedInstance().currentUser
+    GIDSignIn.sharedInstance.restorePreviousSignIn()
+    var u = GIDSignIn.sharedInstance.currentUser
     if u != nil{
-        let mail = u?.profile.email
+        let mail = u?.profile?.email
         let ID = u?.userID
         return User(ID: ID, mail: mail)
     }
-    GIDSignIn.sharedInstance()?.signIn()
-    u = GIDSignIn.sharedInstance().currentUser
+    GIDSignIn.sharedInstance.signIn()
+    u = GIDSignIn.sharedInstance.currentUser
     if u != nil{
-        let mail = u?.profile.email
+        let mail = u?.profile?.email
         let ID = u?.userID
         //TODO: add to DB
         return User(ID: ID, mail: mail)
@@ -81,8 +81,8 @@ class User {
     }
     
     func sign_out() -> Bool{
-        GIDSignIn.sharedInstance()?.signOut()
-        return (GIDSignIn.sharedInstance() == nil)
+        GIDSignIn.sharedInstance.signOut()
+        return (GIDSignIn.sharedInstance == nil)
     }
     
 }
