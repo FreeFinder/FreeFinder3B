@@ -63,7 +63,7 @@ class Item: NSObject, MKAnnotation{
         coordinates: CLLocationCoordinate2D,
         details: String,
         creator_email: String
-    ) async -> ObjectId? {
+    ) async {
         do {
             let app = App(id: APP_ID);
             let user = try await app.login(credentials: Credentials.anonymous);
