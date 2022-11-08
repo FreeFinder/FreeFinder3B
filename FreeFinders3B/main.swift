@@ -73,6 +73,7 @@ class Item: NSObject, MKAnnotation{
     let comments: [String]
     private let creator: User
     let counter: Int
+    let id: String
     
     init(name: String?, type: String?, coordinate: CLLocationCoordinate2D, creator: User){
         self.name = name
@@ -92,5 +93,21 @@ class Item: NSObject, MKAnnotation{
     var subtitle: String?{
         return type
     }
+    
+    func db_add_item(){
+        // add self to DB
+    }
+    
+    func db_delete_item(){
+        // delete self from DB
+    }
+    
+    func db_add_comment(String c){
+        // add passed comment to db
+    }
+    
+    
+    
+    
 }
 
