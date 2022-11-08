@@ -92,7 +92,7 @@ class Item: NSObject, MKAnnotation{
     let coordinate: CLLocationCoordinate2D
     var comments: [String]
     let detail: String?
-    private let creator: User
+    let creator: User
     let counter: Int
     var id: String
     

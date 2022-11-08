@@ -6,8 +6,11 @@
 //
 
 import UIKit
+import MapKit
+//import main.swift
 
 class ItemViewController: UIViewController {
+    var passed_item = Item(name: "", type: "", detail: "", coordinate: CLLocationCoordinate2D(latitude: 0.0, longitude: 0.0), creator: User(ID: "", mail: ""));
 
     @IBOutlet weak var itemImage: UIImageView!
     @IBOutlet weak var itemName: UILabel!
@@ -25,10 +28,17 @@ class ItemViewController: UIViewController {
         itemImage.layer.cornerRadius = itemImage.bounds.width / 2
         
         // TODO: connect to data
-        itemDescription.text = "Description";
-        itemName.text = "Name";
-        //itemLocation = "Shoes";
-        //itemImage.image =
+        itemDescription.text = passed_item.detail;
+        itemName.text = passed_item.name;
+                
+                
+        let lat = String(passed_item.coordinate.latitude);
+        let long = String(passed_item.coordinate.longitude);
+        let latloc = "Latitude: " + lat;
+        let longloc = ", Longitude: " + long;
+        let location = latloc + longloc;
+            
+        itemLocation.text = location;
         
         
         
@@ -48,6 +58,12 @@ class ItemViewController: UIViewController {
         //have to get id of the current item being observed
         //also need to access current user so they can comment
         //comment("tbd", newComment.text);
+        //let current_user = User//passed_item.creator;
+        //let comment_out = current_user.comment(i: passed_item, comment: newComment.text ?? " ");
+        let comment_out = passed_item.add_Comment(comment: newComment.text ?? "");
+        if(comment_out == false){
+            //here we can throw an error for a wrong comment
+        }
     }
 
 }
