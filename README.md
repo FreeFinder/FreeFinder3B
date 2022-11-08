@@ -1,4 +1,4 @@
-# FreeFinders Milestone 3B
+# FreeFinder Milestone 3B
 
 ### (1) How to compile
 ### (2) How to run the code
