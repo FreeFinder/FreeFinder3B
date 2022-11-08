@@ -17,6 +17,7 @@
 		484DC4B32919C84700AE095B /* FreeFinders3BUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484DC4B22919C84700AE095B /* FreeFinders3BUITests.swift */; };
 		484DC4B52919C84700AE095B /* FreeFinders3BUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484DC4B42919C84700AE095B /* FreeFinders3BUITestsLaunchTests.swift */; };
 		5A7713AB2919F20C00040D8A /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A7713AA2919F20C00040D8A /* List.storyboard */; };
+		5A7713AF291A0E3300040D8A /* ItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7713AE291A0E3300040D8A /* ItemsTableViewController.swift */; };
 		734303162919CCC90064974F /* CreateItemView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 734303152919CCC90064974F /* CreateItemView.storyboard */; };
 		734303172919CCC90064974F /* CreateItemView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 734303152919CCC90064974F /* CreateItemView.storyboard */; };
 		734303182919CCC90064974F /* CreateItemView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 734303152919CCC90064974F /* CreateItemView.storyboard */; };
@@ -62,6 +63,7 @@
 		484DC4B22919C84700AE095B /* FreeFinders3BUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeFinders3BUITests.swift; sourceTree = "<group>"; };
 		484DC4B42919C84700AE095B /* FreeFinders3BUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeFinders3BUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5A7713AA2919F20C00040D8A /* List.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = List.storyboard; sourceTree = "<group>"; };
+		5A7713AE291A0E3300040D8A /* ItemsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemsTableViewController.swift; path = ../../../FreeFinderMilestone3B/FreeFinderMilestone3B/ItemsTableViewController.swift; sourceTree = "<group>"; };
 		734303152919CCC90064974F /* CreateItemView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CreateItemView.storyboard; sourceTree = "<group>"; };
 		734303192919CCD00064974F /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		738572BA2919F50000D0F5B5 /* ViewItem.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ViewItem.storyboard; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 		738572C3291A051400D0F5B5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				5A7713AE291A0E3300040D8A /* ItemsTableViewController.swift */,
 				738572C4291A052800D0F5B5 /* ItemViewController.swift */,
 				738572C6291A053600D0F5B5 /* ProfileViewController.swift */,
 			);
@@ -310,6 +313,7 @@
 			files = (
 				484DC4962919C84600AE095B /* ViewController.swift in Sources */,
 				738572C5291A052800D0F5B5 /* ItemViewController.swift in Sources */,
+				5A7713AF291A0E3300040D8A /* ItemsTableViewController.swift in Sources */,
 				738572C7291A053600D0F5B5 /* ProfileViewController.swift in Sources */,
 				484DC4922919C84600AE095B /* AppDelegate.swift in Sources */,
 				484DC4942919C84600AE095B /* SceneDelegate.swift in Sources */,
