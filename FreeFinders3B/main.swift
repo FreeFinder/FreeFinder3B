@@ -12,7 +12,7 @@ import MapKit
 public func refresh()-> [Item]{
     let items = db_get_all_items()
     for item in items{
-        mapView.addAnnotation(item)
+        itemMap.addAnnotation(item)
     }
     return items
 }
