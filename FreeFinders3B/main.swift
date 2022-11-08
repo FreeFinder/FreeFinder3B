@@ -1,4 +1,4 @@
-//
+// Copy of main file
 //  main.swift
 //  FreeFinderMilestone3B
 //
@@ -9,16 +9,18 @@ import SwiftUI
 import GoogleSignIn
 import MapKit
 
-public func refresh()-> [Item]{
+func refresh()-> [Item]{
     let items = db_get_all_items()
     for item in items{
-        itemMap.addAnnotation(item)
+        continue
+        //itemMap.addAnnotation(item)
     }
     return items
 }
 
 private func db_get_all_items()->[Item]{
     // for each item in database, initialize an item object and put in list
+    return []
 }
 
 
@@ -57,23 +59,19 @@ class User {
         // add user, user might already exist (depends on sign in sign out stuff)
     }
     
-    func getLoc(){
-        //iteration2
-    }
-    
     func db_format_user_as_creator(){
         // return however it needs formatting for writing item creator to db
     }
             
     func create_item(name: String?, type: String?, detail: String?, coordinate: CLLocationCoordinate2D) -> Bool{
         // check field validity
-        _ = Item(name, type, detail, coordinate, self)
+        _ = Item(name: name,type: type,detail: detail,coordinate: coordinate,creator: self)
         refresh()
         return true
     }
     
     func comment(i: Item, comment: String)-> Bool{
-        return i.add_Comment(String: comment)
+        return i.add_Comment(comment: comment)
 
     }
     
@@ -92,11 +90,11 @@ class Item: NSObject, MKAnnotation{
     let name: String?
     let type: String?
     let coordinate: CLLocationCoordinate2D
-    let comments: [String]
+    var comments: [String]
     let detail: String?
     private let creator: User
     let counter: Int
-    let id: String
+    var id: String
     
     init(name: String?, type: String?, detail: String?, coordinate: CLLocationCoordinate2D, creator: User){
         self.name = name
@@ -106,10 +104,10 @@ class Item: NSObject, MKAnnotation{
         self.comments = []
         self.counter = 0
         self.detail = detail
-        
-        db_add_item()
+        self.id = ""
         
         super.init()
+        db_add_item()
     }
     
     var title: String?{
@@ -126,22 +124,25 @@ class Item: NSObject, MKAnnotation{
     
     private func db_item_exists()-> Bool{
         // check if item is in db still
+        return true
     }
     
-    private func db_delete_item() ->{
+    private func db_delete_item() -> Bool{
         // delete self from DB
         // returns success of deltion
+        return true
     }
     
     private func db_get_comments()->[String]{
         // get current comments
+        return []
     }
     
-    private func db_add_comment(String c){
+    private func db_add_comment(c : String){
         // add passed comment to db
     }
     
-    func add_Comment(String comment) -> Bool{
+    func add_Comment(comment : String) -> Bool{
         if (comment == ""){
             return false
         }
@@ -163,4 +164,9 @@ class Item: NSObject, MKAnnotation{
         refresh()
         return ret
     }
+    
+    
+    
+    
 }
+
