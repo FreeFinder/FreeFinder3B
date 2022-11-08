@@ -76,6 +76,8 @@ class Item: NSObject, MKAnnotation{
     let id: String
     
     init(name: String?, type: String?, coordinate: CLLocationCoordinate2D, creator: User){
+        // add checks into initializer
+        
         self.name = name
         self.type = type
         self.coordinate = coordinate
@@ -104,6 +106,34 @@ class Item: NSObject, MKAnnotation{
     
     func db_add_comment(String c){
         // add passed comment to db
+    }
+    
+    func db_get_name(){
+        
+    }
+    
+    func db_get_type(){
+        
+    }
+    
+    func db_get_creator(){
+        
+    }
+    
+    func db_get_comments(){
+        
+    }
+    
+    func db_get_counter(){
+        
+    }
+    
+    func add_Comment(String c){
+        
+    }
+    
+    func delete_Item(){
+        
     }
     
     
