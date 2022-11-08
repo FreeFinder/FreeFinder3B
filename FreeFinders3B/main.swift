@@ -47,18 +47,31 @@ class User {
     init(ID: String?, mail: String?){
         self.id = ID
         self.email = mail
+        db_add_user()
     }
     
-    func create_item(){
-        
+    private func db_add_user(){
+        // add user, user might already exist (depends on sign in sign out stuff)
     }
     
-    func comment(item_id: String, comment: String)-> Bool{
+    func db_format_user_as_creator(){
+        // return however it needs formatting for writing item creator to db
+    }
+            
+    func create_item(name: String?, type: String?, detail: String?, coordinate: CLLocationCoordinate2D) -> Bool{
+        // check field validity
+        _ = Item(name, type, detail, coordinate, self)
+        refresh()
         return true
     }
     
-    func delete_item(item_id: String){
-        
+    func comment(i: Item, comment: String)-> Bool{
+        return i.add_Comment(String: comment)
+
+    }
+    
+    func delete_item(i: Item) -> Bool{
+        return i.delete_Item()
     }
     
     func sign_out() -> Bool{
@@ -73,19 +86,21 @@ class Item: NSObject, MKAnnotation{
     let type: String?
     let coordinate: CLLocationCoordinate2D
     let comments: [String]
+    let detail: String?
     private let creator: User
     let counter: Int
     let id: String
     
-    init(name: String?, type: String?, coordinate: CLLocationCoordinate2D, creator: User){
-        // add checks into initializer
-        
+    init(name: String?, type: String?, detail: String?, coordinate: CLLocationCoordinate2D, creator: User){
         self.name = name
         self.type = type
         self.coordinate = coordinate
         self.creator = creator
         self.comments = []
         self.counter = 0
+        self.detail = detail
+        
+        db_add_item()
         
         super.init()
     }
@@ -102,8 +117,13 @@ class Item: NSObject, MKAnnotation{
         // add self to DB
     }
     
-    private func db_delete_item(){
+    private func db_item_exists()-> Bool{
+        // check if item is in db still
+    }
+    
+    private func db_delete_item() ->{
         // delete self from DB
+        // returns success of deltion
     }
     
     private func db_get_comments()->[String]{
@@ -114,12 +134,27 @@ class Item: NSObject, MKAnnotation{
         // add passed comment to db
     }
     
-    func add_Comment(String c) -> Bool{
-        
+    func add_Comment(String comment) -> Bool{
+        if (comment == ""){
+            return false
+        }
+        else{
+            if (self.db_item_exists()){
+                self.comments.append(comment)
+                self.db_add_comment(c: comment)
+                refresh()
+                return true
+            }
+            else{
+                return false
+            }
+        }
     }
     
     func delete_Item() -> Bool{
-        
+        let ret = db_delete_item()
+        refresh()
+        return ret
     }
     
     
