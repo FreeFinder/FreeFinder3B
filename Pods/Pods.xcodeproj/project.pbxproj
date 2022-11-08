@@ -366,7 +366,7 @@
 		EEEF495D54F2A700F48DA8C3A88D6FA6 /* OIDServiceDiscovery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDServiceDiscovery.m; path = Source/AppAuthCore/OIDServiceDiscovery.m; sourceTree = "<group>"; };
 		F04BD6568F1FE92D10732239490871A9 /* GTMSessionFetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionFetcher.h; path = Source/GTMSessionFetcher.h; sourceTree = "<group>"; };
 		F07AA02855A3C28D607BE8C726E56484 /* GTMSessionFetcher-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GTMSessionFetcher-Info.plist"; sourceTree = "<group>"; };
-		F15FFDAA747BAE80BAD9C21EDD6E3D93 /* Pods-FreeFinders3B */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-FreeFinders3B"; path = Pods_FreeFinders3B.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F15FFDAA747BAE80BAD9C21EDD6E3D93 /* Pods_FreeFinders3B.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreeFinders3B.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F17D0C0EC3E27CB408DE97CC872B955E /* Pods-FreeFinders3B.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FreeFinders3B.modulemap"; sourceTree = "<group>"; };
 		F1D3B3836EC6EBC156ECAD8279FA8B7A /* OIDIDToken.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDIDToken.m; path = Source/AppAuthCore/OIDIDToken.m; sourceTree = "<group>"; };
 		F1D5ACECB8623E599588BCBD7FEA29CE /* OIDAuthState+IOS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OIDAuthState+IOS.h"; path = "Source/AppAuth/iOS/OIDAuthState+IOS.h"; sourceTree = "<group>"; };
@@ -621,7 +621,7 @@
 				3FD1B4C1246D643E9476438C28048FA8 /* AppAuth.framework */,
 				6FD122EA0AB9AB2A8FFA5F676C795DF0 /* GTMAppAuth.framework */,
 				C1998E0D8085221AD87F89B614C10E52 /* GTMSessionFetcher.framework */,
-				F15FFDAA747BAE80BAD9C21EDD6E3D93 /* Pods-FreeFinders3B */,
+				F15FFDAA747BAE80BAD9C21EDD6E3D93 /* Pods_FreeFinders3B.framework */,
 				7842DC325E30FD857C91252A4D69C15D /* Pods-FreeFinders3B-FreeFinders3BUITests */,
 				9A6B8307822EB084D355710084FAD963 /* Pods-FreeFinders3BTests */,
 			);
@@ -937,7 +937,7 @@
 			);
 			name = "Pods-FreeFinders3B";
 			productName = Pods_FreeFinders3B;
-			productReference = F15FFDAA747BAE80BAD9C21EDD6E3D93 /* Pods-FreeFinders3B */;
+			productReference = F15FFDAA747BAE80BAD9C21EDD6E3D93 /* Pods_FreeFinders3B.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		8627999EF1D5E93E13DAFF580DA8CDCF /* GTMAppAuth */ = {
