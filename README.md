@@ -9,8 +9,10 @@ We've implemented the following use cases:
 * Create item
 * Delete item
 * Comment on post
-* Refresh map 
+* Refresh map
 * Sign in/out
+* View map/list
+* View posting
 ### (6) Who did what: who paired with who, which part is implemented by which pair
 ### (7) Changes: design changes or unit test changes from earlier milestones
 We are not implementing the ability to upload a photo in this iteration. 
