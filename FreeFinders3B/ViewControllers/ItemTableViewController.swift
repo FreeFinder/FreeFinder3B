@@ -13,7 +13,7 @@ class ItemsTableViewController: UITableViewController {
     var items = refresh()
     
     override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear()
+        super.viewWillAppear(true)
         items = refresh()
     }
     

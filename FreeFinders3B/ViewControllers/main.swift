@@ -20,6 +20,7 @@ func refresh()-> [Item]{
 
 private func db_get_all_items()->[Item]{
     // for each item in database, initialize an item object and put in list
+    return []
 }
 
 
@@ -64,7 +65,7 @@ class User {
             
     func create_item(name: String?, type: String?, detail: String?, coordinate: CLLocationCoordinate2D) -> Bool{
         // check field validity
-        _ = Item(name, type, detail, coordinate, self)
+        _ = Item(name: name,type: type,detail: detail,coordinate: coordinate,creator: self)
         refresh()
         return true
     }
@@ -89,11 +90,11 @@ class Item: NSObject, MKAnnotation{
     let name: String?
     let type: String?
     let coordinate: CLLocationCoordinate2D
-    let comments: [String]
+    var comments: [String]
     let detail: String?
     private let creator: User
     let counter: Int
-    let id: String
+    var id: String
     
     init(name: String?, type: String?, detail: String?, coordinate: CLLocationCoordinate2D, creator: User){
         self.name = name
@@ -103,10 +104,10 @@ class Item: NSObject, MKAnnotation{
         self.comments = []
         self.counter = 0
         self.detail = detail
-        
-        db_add_item()
+        self.id = ""
         
         super.init()
+        db_add_item()
     }
     
     var title: String?{
@@ -123,15 +124,18 @@ class Item: NSObject, MKAnnotation{
     
     private func db_item_exists()-> Bool{
         // check if item is in db still
+        return true
     }
     
-    private func db_delete_item(){
+    private func db_delete_item() -> Bool{
         // delete self from DB
         // returns success of deltion
+        return true
     }
     
     private func db_get_comments()->[String]{
         // get current comments
+        return []
     }
     
     private func db_add_comment(c : String){
