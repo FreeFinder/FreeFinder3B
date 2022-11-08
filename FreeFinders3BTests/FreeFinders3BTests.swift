@@ -27,7 +27,16 @@ final class FreeFinders3BTests: XCTestCase {
         let test_user = User(ID: "test_id", mail: "test_email")
         let items = db_get_all_items()
         
+        // valid item
         test_user.create_item(name: "test_item", type: "test_type", detail: "test_detail",  coordinate: CLLocationCoordinate2DMake(90.000, 135.000))
+        
+        //invalid title
+        
+        //invalid quantity
+        
+        //invalid description -- empty
+        
+        //invalid description -- too long
         
     }
     
@@ -55,11 +64,14 @@ final class FreeFinders3BTests: XCTestCase {
         let i = initial_comments.count
         XCTAssertEqual("first comment", new_comments[i])
         
-                      
         //true: valid comment and item 2, make sure both comments are in database
         XCTAssertFalse(test_user2.comment(i: test_item, comment: "second comment"))
         new_comments = test_item.db_get_comments()
         XCTAssertEqual("second comment", new_comments[i+1])
+        
+    }
+    
+    func test_delete_item() throws {
         
     }
     

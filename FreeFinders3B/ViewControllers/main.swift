@@ -66,10 +66,14 @@ class User {
             
     func create_item(name: String?, type: String?, detail: String?, coordinate: CLLocationCoordinate2D) -> Bool{
         // check field validity
-        let i = Item(name: name,type: type,detail: detail,coordinate: coordinate,creator: self)
-        i.db_add_item()
-        refresh()
-        return true
+        if ((detail.count > 0) && (detail.count < 280) && (name.count < 100) && (name.count > 0)) {
+            let i = Item(name: name,type: type,detail: detail,coordinate: coordinate,creator: self)
+            i.db_add_item()
+            refresh()
+            return true
+        }
+        return false 
+        
     }
     
     func comment(i: Item, comment: String)-> Bool{
