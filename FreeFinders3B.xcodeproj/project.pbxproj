@@ -16,6 +16,8 @@
 		484DC4A92919C84700AE095B /* FreeFinders3BTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484DC4A82919C84700AE095B /* FreeFinders3BTests.swift */; };
 		484DC4B32919C84700AE095B /* FreeFinders3BUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484DC4B22919C84700AE095B /* FreeFinders3BUITests.swift */; };
 		484DC4B52919C84700AE095B /* FreeFinders3BUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484DC4B42919C84700AE095B /* FreeFinders3BUITestsLaunchTests.swift */; };
+		5DF055D7291A0C2C002F8FF7 /* MapView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DF055D6291A0C2C002F8FF7 /* MapView.storyboard */; };
+		5DF055D9291A0C48002F8FF7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF055D8291A0C48002F8FF7 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		484DC4AE2919C84700AE095B /* FreeFinders3BUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreeFinders3BUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		484DC4B22919C84700AE095B /* FreeFinders3BUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeFinders3BUITests.swift; sourceTree = "<group>"; };
 		484DC4B42919C84700AE095B /* FreeFinders3BUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeFinders3BUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5DF055D6291A0C2C002F8FF7 /* MapView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapView.storyboard; sourceTree = "<group>"; };
+		5DF055D8291A0C48002F8FF7 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +107,9 @@
 				484DC4932919C84600AE095B /* SceneDelegate.swift */,
 				484DC4952919C84600AE095B /* ViewController.swift */,
 				484DC4972919C84600AE095B /* Main.storyboard */,
+				5DF055D6291A0C2C002F8FF7 /* MapView.storyboard */,
 				484DC49A2919C84700AE095B /* Assets.xcassets */,
+				5DF055D8291A0C48002F8FF7 /* MapViewController.swift */,
 				484DC49C2919C84700AE095B /* LaunchScreen.storyboard */,
 				484DC49F2919C84700AE095B /* Info.plist */,
 			);
@@ -233,6 +239,7 @@
 			files = (
 				484DC49E2919C84700AE095B /* LaunchScreen.storyboard in Resources */,
 				484DC49B2919C84700AE095B /* Assets.xcassets in Resources */,
+				5DF055D7291A0C2C002F8FF7 /* MapView.storyboard in Resources */,
 				484DC4992919C84600AE095B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +268,7 @@
 				484DC4962919C84600AE095B /* ViewController.swift in Sources */,
 				484DC4922919C84600AE095B /* AppDelegate.swift in Sources */,
 				484DC4942919C84600AE095B /* SceneDelegate.swift in Sources */,
+				5DF055D9291A0C48002F8FF7 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
