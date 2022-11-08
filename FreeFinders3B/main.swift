@@ -9,13 +9,15 @@ import SwiftUI
 import GoogleSignIn
 import MapKit
 
-func refresh(){
-    
+public func refresh()-> [Item]{
+    // called by view controllers
+    return db_get_all_items()
 }
 
-func item_to_annot(item_id: String){
-    
+private func db_get_all_items()->[Item]{
+    // for each item in database, initialize an item object and put in list
 }
+
 
 func sign_in() -> User?{
     
@@ -96,43 +98,27 @@ class Item: NSObject, MKAnnotation{
         return type
     }
     
-    func db_add_item(){
+    private func db_add_item(){
         // add self to DB
     }
     
-    func db_delete_item(){
+    private func db_delete_item(){
         // delete self from DB
     }
     
-    func db_add_comment(String c){
+    private func db_get_comments()->[String]{
+        // get current comments
+    }
+    
+    private func db_add_comment(String c){
         // add passed comment to db
     }
     
-    func db_get_name(){
+    func add_Comment(String c) -> Bool{
         
     }
     
-    func db_get_type(){
-        
-    }
-    
-    func db_get_creator(){
-        
-    }
-    
-    func db_get_comments(){
-        
-    }
-    
-    func db_get_counter(){
-        
-    }
-    
-    func add_Comment(String c){
-        
-    }
-    
-    func delete_Item(){
+    func delete_Item() -> Bool{
         
     }
     
@@ -140,4 +126,6 @@ class Item: NSObject, MKAnnotation{
     
     
 }
+
+
 
