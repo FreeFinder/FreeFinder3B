@@ -57,6 +57,10 @@ class User {
         // add user, user might already exist (depends on sign in sign out stuff)
     }
     
+    func getLoc(){
+        //iteration2
+    }
+    
     func db_format_user_as_creator(){
         // return however it needs formatting for writing item creator to db
     }
@@ -159,11 +163,4 @@ class Item: NSObject, MKAnnotation{
         refresh()
         return ret
     }
-    
-    
-    
-    
 }
-
-
-
