@@ -10,8 +10,11 @@ import GoogleSignIn
 import MapKit
 
 public func refresh()-> [Item]{
-    // called by view controllers
-    return db_get_all_items()
+    let items = db_get_all_items()
+    for item in items{
+        mapView.addAnnotation(item)
+    }
+    return items
 }
 
 private func db_get_all_items()->[Item]{
