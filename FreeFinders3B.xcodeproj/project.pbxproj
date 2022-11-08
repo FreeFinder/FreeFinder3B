@@ -33,6 +33,13 @@
 		738572BD2919F50000D0F5B5 /* ViewItem.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 738572BA2919F50000D0F5B5 /* ViewItem.storyboard */; };
 		738572C5291A052800D0F5B5 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738572C4291A052800D0F5B5 /* ItemViewController.swift */; };
 		738572C7291A053600D0F5B5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738572C6291A053600D0F5B5 /* ProfileViewController.swift */; };
+		BD6DF2EF291B1AD800378E42 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = BD6DF2EE291B1AD800378E42 /* GoogleSignIn */; };
+		BD6DF2F1291B1AD800378E42 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BD6DF2F0291B1AD800378E42 /* GoogleSignInSwift */; };
+		BD6DF2FB291B1BA400378E42 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6DF2FA291B1BA400378E42 /* Item.swift */; };
+		BD6DF2FD291B1BAF00378E42 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6DF2FC291B1BAF00378E42 /* User.swift */; };
+		BD6DF2FF291B1BBB00378E42 /* DataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6DF2FE291B1BBB00378E42 /* DataFetcher.swift */; };
+		BD6DF302291B1D5500378E42 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = BD6DF301291B1D5500378E42 /* Realm */; };
+		BD6DF304291B1D5500378E42 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BD6DF303291B1D5500378E42 /* RealmSwift */; };
 		BDA4682FCBF3E710C4CBB078 /* Pods_FreeFinders3B_FreeFinders3BUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67801B4C3664E9F29D4F9CD0 /* Pods_FreeFinders3B_FreeFinders3BUITests.framework */; };
 		FA08D5DED4D76404EB8F4E34 /* Pods_FreeFinders3BTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC117F32C6CBD91059E83E0D /* Pods_FreeFinders3BTests.framework */; };
 /* End PBXBuildFile section */
@@ -133,6 +140,9 @@
 		84FA18F0DAEB2A9FC97999D3 /* Pods-FreeFinders3BTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeFinders3BTests.release.xcconfig"; path = "Target Support Files/Pods-FreeFinders3BTests/Pods-FreeFinders3BTests.release.xcconfig"; sourceTree = "<group>"; };
 		9E760A1BCDADF10820FC1B63 /* Pods_FreeFinders3B.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreeFinders3B.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7341275FDFB1C9A81D8E8F7 /* Pods-FreeFinders3B-FreeFinders3BUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeFinders3B-FreeFinders3BUITests.release.xcconfig"; path = "Target Support Files/Pods-FreeFinders3B-FreeFinders3BUITests/Pods-FreeFinders3B-FreeFinders3BUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BD6DF2FA291B1BA400378E42 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		BD6DF2FC291B1BAF00378E42 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BD6DF2FE291B1BBB00378E42 /* DataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetcher.swift; sourceTree = "<group>"; };
 		CAB549F64377E4598B922F36 /* Pods-FreeFinders3B.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeFinders3B.release.xcconfig"; path = "Target Support Files/Pods-FreeFinders3B/Pods-FreeFinders3B.release.xcconfig"; sourceTree = "<group>"; };
 		DC117F32C6CBD91059E83E0D /* Pods_FreeFinders3BTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreeFinders3BTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9A7859189C3B99A0FA59A83 /* Pods-FreeFinders3B.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeFinders3B.debug.xcconfig"; path = "Target Support Files/Pods-FreeFinders3B/Pods-FreeFinders3B.debug.xcconfig"; sourceTree = "<group>"; };
@@ -143,7 +153,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD6DF2F1291B1AD800378E42 /* GoogleSignInSwift in Frameworks */,
 				18C3200511EC9992A27AEABA /* Pods_FreeFinders3B.framework in Frameworks */,
+				BD6DF302291B1D5500378E42 /* Realm in Frameworks */,
+				BD6DF304291B1D5500378E42 /* RealmSwift in Frameworks */,
+				BD6DF2EF291B1AD800378E42 /* GoogleSignIn in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +217,7 @@
 		484DC4902919C84600AE095B /* FreeFinders3B */ = {
 			isa = PBXGroup;
 			children = (
+				BD6DF2F9291B1B9400378E42 /* Classes */,
 				484DC4912919C84600AE095B /* AppDelegate.swift */,
 				484DC4932919C84600AE095B /* SceneDelegate.swift */,
 				484DC4952919C84600AE095B /* ViewController.swift */,
@@ -237,9 +252,9 @@
 		5A7713BD291AFD6300040D8A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5A7713C7291AFD6300040D8A /* AppAuth */,
-				5A7713C9291AFD6300040D8A /* GTMAppAuth */,
-				5A7713CB291AFD6300040D8A /* GTMSessionFetcher */,
+				5A7713C7291AFD6300040D8A /* AppAuth.framework */,
+				5A7713C9291AFD6300040D8A /* GTMAppAuth.framework */,
+				5A7713CB291AFD6300040D8A /* GTMSessionFetcher.framework */,
 				5A7713CD291AFD6300040D8A /* Pods-FreeFinders3B */,
 				5A7713CF291AFD6300040D8A /* Pods-FreeFinders3B-FreeFinders3BUITests */,
 				5A7713D1291AFD6300040D8A /* Pods-FreeFinders3BTests */,
@@ -288,6 +303,16 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		BD6DF2F9291B1B9400378E42 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BD6DF2FA291B1BA400378E42 /* Item.swift */,
+				BD6DF2FC291B1BAF00378E42 /* User.swift */,
+				BD6DF2FE291B1BBB00378E42 /* DataFetcher.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -307,6 +332,12 @@
 			dependencies = (
 			);
 			name = FreeFinders3B;
+			packageProductDependencies = (
+				BD6DF2EE291B1AD800378E42 /* GoogleSignIn */,
+				BD6DF2F0291B1AD800378E42 /* GoogleSignInSwift */,
+				BD6DF301291B1D5500378E42 /* Realm */,
+				BD6DF303291B1D5500378E42 /* RealmSwift */,
+			);
 			productName = FreeFinders3B;
 			productReference = 484DC48E2919C84600AE095B /* FreeFinders3B.app */;
 			productType = "com.apple.product-type.application";
@@ -383,6 +414,10 @@
 				Base,
 			);
 			mainGroup = 484DC4852919C84600AE095B;
+			packageReferences = (
+				BD6DF2ED291B1AD800378E42 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				BD6DF300291B1D5500378E42 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 484DC48F2919C84600AE095B /* Products */;
 			projectDirPath = "";
 			projectReferences = (
@@ -401,26 +436,23 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		5A7713C7291AFD6300040D8A /* AppAuth */ = {
+		5A7713C7291AFD6300040D8A /* AppAuth.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			name = AppAuth;
 			path = AppAuth.framework;
 			remoteRef = 5A7713C6291AFD6300040D8A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		5A7713C9291AFD6300040D8A /* GTMAppAuth */ = {
+		5A7713C9291AFD6300040D8A /* GTMAppAuth.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			name = GTMAppAuth;
 			path = GTMAppAuth.framework;
 			remoteRef = 5A7713C8291AFD6300040D8A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		5A7713CB291AFD6300040D8A /* GTMSessionFetcher */ = {
+		5A7713CB291AFD6300040D8A /* GTMSessionFetcher.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			name = GTMSessionFetcher;
 			path = GTMSessionFetcher.framework;
 			remoteRef = 5A7713CA291AFD6300040D8A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -636,6 +668,9 @@
 				48B38BAF291A14FF0031D619 /* main.swift in Sources */,
 				738572C5291A052800D0F5B5 /* ItemViewController.swift in Sources */,
 				738572C7291A053600D0F5B5 /* ProfileViewController.swift in Sources */,
+				BD6DF2FB291B1BA400378E42 /* Item.swift in Sources */,
+				BD6DF2FF291B1BBB00378E42 /* DataFetcher.swift in Sources */,
+				BD6DF2FD291B1BAF00378E42 /* User.swift in Sources */,
 				484DC4922919C84600AE095B /* AppDelegate.swift in Sources */,
 				5A7713B1291A0F9E00040D8A /* ItemTableViewController.swift in Sources */,
 				484DC4942919C84600AE095B /* SceneDelegate.swift in Sources */,
@@ -988,6 +1023,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BD6DF2ED291B1AD800378E42 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		BD6DF300291B1D5500378E42 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BD6DF2EE291B1AD800378E42 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BD6DF2ED291B1AD800378E42 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		BD6DF2F0291B1AD800378E42 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BD6DF2ED291B1AD800378E42 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+		BD6DF301291B1D5500378E42 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BD6DF300291B1D5500378E42 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		BD6DF303291B1D5500378E42 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BD6DF300291B1D5500378E42 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 484DC4862919C84600AE095B /* Project object */;
 }
