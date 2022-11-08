@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import main
 
 
 class ItemsTableViewController: UITableViewController {
