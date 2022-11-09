@@ -45,6 +45,11 @@ final class Mapkit_Tests: XCTestCase {
 
     }
     
+//    func isMapProper() {
+//        XCTAssertNotNil(self.viewControllerUnderTest.mapView.delegate, "MapView violates mapview delegate")
+//    }
+    
+    
 //    func testIsMapViewProper() {
 //        // UI tests must launch the application that they test.
 //        let app = XCUIApplication()
@@ -52,6 +57,18 @@ final class Mapkit_Tests: XCTestCase {
 //        // Checks if the view controller is aligned with apple mapkit protocol
 //        XCTAssert(map.conforms(to: MKMapViewDelegate.self), "ViewController violates MKMapViewDelegate protocol")
 //    }
+    
+//    func hasTargetAnnotation(sampleAnnotation: MKAnnotation.Type) -> Bool {
+//       let mapAnnotations = self.viewControllerUnderTest.mapView.annotations
+//       var hasTargetAnnotation = false
+//       for anno in mapAnnotations {
+//           if (anno.isKind(of: Item.self)) {
+//               hasTargetAnnotation = true
+//           }
+//       }
+//       return hasTargetAnnotation
+//    }
+
 
     func testLaunchPerformance() throws {
         if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
