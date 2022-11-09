@@ -38,7 +38,7 @@ final class MapKitTests: XCTestCase {
     func isMapReloaded() {
         // Checks if map is loaded in the test view
         // Functino to reload the map
-        refresh()
+        Item.refresh()
         
         // Asserts that the map is loaded and ready to go
         XCTAssertNotNil(viewControllerUnderTest.mapView, "There is no Map View in unit test")
@@ -77,13 +77,12 @@ final class MapKitTests: XCTestCase {
             coordinate: CLLocationCoordinate2D(latitude: 0.0, longitude: 0.0),
             quantity: 1
         )
-        let pulled_annot = create_item(item_valid_id)
-        XCTAssertEqual(pulled_annot.title, "test_title", "Wrong title")
-        XCTAssertEqual(pulled_annot.subtitle, "test sub", "Wrong subtitle")
+        XCTAssertEqual(item_valid_id.title, "test_title", "Wrong title")
+        XCTAssertEqual(item_valid_id.subtitle, "test sub", "Wrong subtitle")
         
         // Checks if we can add the annotation
-        let hasTestAnno = self.hasTargetAnnotation(sampleAnnotation: pulled_annot)
-        XCTAssertTrue(pulled_annot)
+        let hasTestAnno = self.hasTargetAnnotation(sampleAnnotation: item_valid_id)
+        XCTAssertTrue(item_valid_id)
     }
     
     func testControllerAddsAnnotationsToMapView() {
