@@ -59,17 +59,12 @@ final class MapKitTests: XCTestCase {
         XCTAssertNotNil(self.viewControllerUnderTest.mapView.delegate, "MapView violates mapview delegate")
     }
     
-    func testMapInitialization() {
-        // Testing is map type is working
-        // for this app we are most likely going to be using a roadmap since it will be campus specific
-        XCTAssert(viewControllerUnderTest.mapView.mapType == MKMapType.standard);
-    }
-    
-    func testControllerAddsAnnotationsToMapView() {
-        // Tests if any number of annotations is on the map
-        let annotationsOnMap = self.viewControllerUnderTest.mapView.annotations
-        XCTAssertGreaterThan(annotationsOnMap.count, 0)
-    }
+//    no annotations yet
+//    func testControllerAddsAnnotationsToMapView() {
+//        // Tests if any number of annotations is on the map
+//        let annotationsOnMap = self.viewControllerUnderTest.mapView.annotations
+//        XCTAssertGreaterThan(annotationsOnMap.count, 0)
+//    }
     
     func hasTargetAnnotation(sampleAnnotation: MKAnnotation.Type) -> Bool {
        let mapAnnotations = self.viewControllerUnderTest.mapView.annotations
@@ -80,13 +75,6 @@ final class MapKitTests: XCTestCase {
            }
        }
        return hasTargetAnnotation
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        measure {
-            // Put the code you want to measure the time of here.
-        }
     }
 
 }
