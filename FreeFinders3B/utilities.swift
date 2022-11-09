@@ -6,16 +6,14 @@
 //
 
 import Foundation
+import UIKit
 
-/*
+
+
 func refresh() async -> [Item] {
     let user = await User(email: "mongodb@gmail.com");
     let observer = await AppData(user: user);
-    mapView!.removeAnnotations(mapView!.annotations)
-    let items = await observer.db_get_all_items();
-    for item in items{
-        mapView.addAnnotation(item)
-    }
-    return items
+    if let mainViewController = await UIApplication.shared.keyWindow?.rootViewController as? ViewController {await mainViewController.refresh()}
+    return await observer.db_get_all_items()
 }
-*/
+
