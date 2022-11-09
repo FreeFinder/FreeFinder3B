@@ -56,7 +56,6 @@ class User {
         return await i.add_Comment(comment: comment)
 
     }
-    
     func sign_out() -> Bool{
 //        GIDSignIn.sharedInstance?.signOut()
 //        return (GIDSignIn.sharedInstance() == nil)
