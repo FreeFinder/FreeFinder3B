@@ -22,11 +22,12 @@ class AppData {
         await db_get_all_items();
     }
     
-    func refresh() async {
-        await db_get_all_items();
+    func refresh() async -> [Item] {
+        return await db_get_all_items();
     }
     
-    func db_get_all_items() async {
+    func db_get_all_items() async -> [Item] {
+        var res: [Item] = [];
         do {
             let app = App(id: APP_ID);
             let user = try await app.login(credentials: Credentials.anonymous);
@@ -64,11 +65,13 @@ class AppData {
                 )
                 temp_item_array.append(fetchedItem);
             }
-            
             self.items = temp_item_array;
+            res = temp_item_array;
         } catch {
             print("Failed to fetch all the items: \(error.localizedDescription)")
         }
+        
+        return res;
     }
     
     func db_fetch_user(email: String) async -> User? {
