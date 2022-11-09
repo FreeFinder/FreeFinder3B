@@ -18,8 +18,6 @@
 		484DC4B52919C84700AE095B /* FreeFinders3BUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484DC4B42919C84700AE095B /* FreeFinders3BUITestsLaunchTests.swift */; };
 		5A7713AB2919F20C00040D8A /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A7713AA2919F20C00040D8A /* List.storyboard */; };
 		5A7713B1291A0F9E00040D8A /* ItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7713B0291A0F9E00040D8A /* ItemTableViewController.swift */; };
-		5A7713B3291AFD0200040D8A /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 5A7713B2291AFD0200040D8A /* Podfile */; };
-		5A7713B5291AFD0A00040D8A /* Podfile.lock in Resources */ = {isa = PBXBuildFile; fileRef = 5A7713B4291AFD0A00040D8A /* Podfile.lock */; };
 		734303162919CCC90064974F /* CreateItemView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 734303152919CCC90064974F /* CreateItemView.storyboard */; };
 		734303172919CCC90064974F /* CreateItemView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 734303152919CCC90064974F /* CreateItemView.storyboard */; };
 		734303182919CCC90064974F /* CreateItemView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 734303152919CCC90064974F /* CreateItemView.storyboard */; };
@@ -55,27 +53,6 @@
 			remoteGlobalIDString = 484DC48D2919C84600AE095B;
 			remoteInfo = FreeFinders3B;
 		};
-		5A7713CC291AFD6300040D8A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5A7713BC291AFD6300040D8A /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F15FFDAA747BAE80BAD9C21EDD6E3D93;
-			remoteInfo = "Pods-FreeFinders3B";
-		};
-		5A7713CE291AFD6300040D8A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5A7713BC291AFD6300040D8A /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7842DC325E30FD857C91252A4D69C15D;
-			remoteInfo = "Pods-FreeFinders3B-FreeFinders3BUITests";
-		};
-		5A7713D0291AFD6300040D8A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5A7713BC291AFD6300040D8A /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9A6B8307822EB084D355710084FAD963;
-			remoteInfo = "Pods-FreeFinders3BTests";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -94,15 +71,6 @@
 		484DC4B42919C84700AE095B /* FreeFinders3BUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeFinders3BUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5A7713AA2919F20C00040D8A /* List.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = List.storyboard; sourceTree = "<group>"; };
 		5A7713B0291A0F9E00040D8A /* ItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewController.swift; sourceTree = "<group>"; };
-		5A7713B2291AFD0200040D8A /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		5A7713B4291AFD0A00040D8A /* Podfile.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
-		5A7713B6291AFD6300040D8A /* Manifest.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Manifest.lock; sourceTree = "<group>"; };
-		5A7713B7291AFD6300040D8A /* Target Support Files */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Target Support Files"; sourceTree = "<group>"; };
-		5A7713B8291AFD6300040D8A /* GoogleSignIn */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GoogleSignIn; sourceTree = "<group>"; };
-		5A7713B9291AFD6300040D8A /* GTMSessionFetcher */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GTMSessionFetcher; sourceTree = "<group>"; };
-		5A7713BA291AFD6300040D8A /* AppAuth */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AppAuth; sourceTree = "<group>"; };
-		5A7713BB291AFD6300040D8A /* GTMAppAuth */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GTMAppAuth; sourceTree = "<group>"; };
-		5A7713BC291AFD6300040D8A /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Pods.xcodeproj; sourceTree = "<group>"; };
 		734303152919CCC90064974F /* CreateItemView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CreateItemView.storyboard; sourceTree = "<group>"; };
 		734303192919CCD00064974F /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		738572BA2919F50000D0F5B5 /* ViewItem.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ViewItem.storyboard; sourceTree = "<group>"; };
@@ -145,13 +113,10 @@
 		484DC4852919C84600AE095B = {
 			isa = PBXGroup;
 			children = (
-				5A7713B2291AFD0200040D8A /* Podfile */,
-				5A7713B4291AFD0A00040D8A /* Podfile.lock */,
 				484DC4902919C84600AE095B /* FreeFinders3B */,
 				484DC4A72919C84700AE095B /* FreeFinders3BTests */,
 				484DC4B12919C84700AE095B /* FreeFinders3BUITests */,
 				484DC48F2919C84600AE095B /* Products */,
-				B1D259C5C33D4441F8BE5F68 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -200,16 +165,6 @@
 			path = FreeFinders3BUITests;
 			sourceTree = "<group>";
 		};
-		5A7713BD291AFD6300040D8A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5A7713CD291AFD6300040D8A /* Pods-FreeFinders3B */,
-				5A7713CF291AFD6300040D8A /* Pods-FreeFinders3B-FreeFinders3BUITests */,
-				5A7713D1291AFD6300040D8A /* Pods-FreeFinders3BTests */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		734303142919CCB60064974F /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -230,20 +185,6 @@
 				5A7713B0291A0F9E00040D8A /* ItemTableViewController.swift */,
 			);
 			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		B1D259C5C33D4441F8BE5F68 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				5A7713BA291AFD6300040D8A /* AppAuth */,
-				5A7713B8291AFD6300040D8A /* GoogleSignIn */,
-				5A7713BB291AFD6300040D8A /* GTMAppAuth */,
-				5A7713B9291AFD6300040D8A /* GTMSessionFetcher */,
-				5A7713B6291AFD6300040D8A /* Manifest.lock */,
-				5A7713BC291AFD6300040D8A /* Pods.xcodeproj */,
-				5A7713B7291AFD6300040D8A /* Target Support Files */,
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 		BD6DF2F9291B1B9400378E42 /* Classes */ = {
@@ -353,12 +294,6 @@
 			);
 			productRefGroup = 484DC48F2919C84600AE095B /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 5A7713BD291AFD6300040D8A /* Products */;
-					ProjectRef = 5A7713BC291AFD6300040D8A /* Pods.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				484DC48D2919C84600AE095B /* FreeFinders3B */,
@@ -368,42 +303,13 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		5A7713CD291AFD6300040D8A /* Pods-FreeFinders3B */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			name = "Pods-FreeFinders3B";
-			path = Pods_FreeFinders3B.framework;
-			remoteRef = 5A7713CC291AFD6300040D8A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		5A7713CF291AFD6300040D8A /* Pods-FreeFinders3B-FreeFinders3BUITests */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			name = "Pods-FreeFinders3B-FreeFinders3BUITests";
-			path = Pods_FreeFinders3B_FreeFinders3BUITests.framework;
-			remoteRef = 5A7713CE291AFD6300040D8A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		5A7713D1291AFD6300040D8A /* Pods-FreeFinders3BTests */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			name = "Pods-FreeFinders3BTests";
-			path = Pods_FreeFinders3BTests.framework;
-			remoteRef = 5A7713D0291AFD6300040D8A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
 		484DC48C2919C84600AE095B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A7713B5291AFD0A00040D8A /* Podfile.lock in Resources */,
 				484DC49E2919C84700AE095B /* LaunchScreen.storyboard in Resources */,
 				484DC49B2919C84700AE095B /* Assets.xcassets in Resources */,
-				5A7713B3291AFD0200040D8A /* Podfile in Resources */,
 				738572BB2919F50000D0F5B5 /* ViewItem.storyboard in Resources */,
 				5A7713AB2919F20C00040D8A /* List.storyboard in Resources */,
 				7343031A2919CCD00064974F /* Profile.storyboard in Resources */,
