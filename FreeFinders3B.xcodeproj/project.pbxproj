@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18C3200511EC9992A27AEABA /* Pods_FreeFinders3B.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E760A1BCDADF10820FC1B63 /* Pods_FreeFinders3B.framework */; };
 		484DC4922919C84600AE095B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484DC4912919C84600AE095B /* AppDelegate.swift */; };
 		484DC4942919C84600AE095B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484DC4932919C84600AE095B /* SceneDelegate.swift */; };
 		484DC4962919C84600AE095B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484DC4952919C84600AE095B /* ViewController.swift */; };
@@ -33,15 +32,11 @@
 		738572BD2919F50000D0F5B5 /* ViewItem.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 738572BA2919F50000D0F5B5 /* ViewItem.storyboard */; };
 		738572C5291A052800D0F5B5 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738572C4291A052800D0F5B5 /* ItemViewController.swift */; };
 		738572C7291A053600D0F5B5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738572C6291A053600D0F5B5 /* ProfileViewController.swift */; };
-		BD6DF2EF291B1AD800378E42 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = BD6DF2EE291B1AD800378E42 /* GoogleSignIn */; };
-		BD6DF2F1291B1AD800378E42 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BD6DF2F0291B1AD800378E42 /* GoogleSignInSwift */; };
 		BD6DF2FB291B1BA400378E42 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6DF2FA291B1BA400378E42 /* Item.swift */; };
 		BD6DF2FD291B1BAF00378E42 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6DF2FC291B1BAF00378E42 /* User.swift */; };
 		BD6DF302291B1D5500378E42 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = BD6DF301291B1D5500378E42 /* Realm */; };
 		BD6DF304291B1D5500378E42 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BD6DF303291B1D5500378E42 /* RealmSwift */; };
 		BD6DF307291B247400378E42 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6DF306291B247400378E42 /* AppData.swift */; };
-		BDA4682FCBF3E710C4CBB078 /* Pods_FreeFinders3B_FreeFinders3BUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67801B4C3664E9F29D4F9CD0 /* Pods_FreeFinders3B_FreeFinders3BUITests.framework */; };
-		FA08D5DED4D76404EB8F4E34 /* Pods_FreeFinders3BTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC117F32C6CBD91059E83E0D /* Pods_FreeFinders3BTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,23 +103,14 @@
 		5A7713BA291AFD6300040D8A /* AppAuth */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AppAuth; sourceTree = "<group>"; };
 		5A7713BB291AFD6300040D8A /* GTMAppAuth */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GTMAppAuth; sourceTree = "<group>"; };
 		5A7713BC291AFD6300040D8A /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Pods.xcodeproj; sourceTree = "<group>"; };
-		67801B4C3664E9F29D4F9CD0 /* Pods_FreeFinders3B_FreeFinders3BUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreeFinders3B_FreeFinders3BUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6F9D69221B4B881DEC532B1B /* Pods-FreeFinders3B-FreeFinders3BUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeFinders3B-FreeFinders3BUITests.debug.xcconfig"; path = "Target Support Files/Pods-FreeFinders3B-FreeFinders3BUITests/Pods-FreeFinders3B-FreeFinders3BUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		71CAEC691908D9110967CA6F /* Pods-FreeFinders3BTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeFinders3BTests.debug.xcconfig"; path = "Target Support Files/Pods-FreeFinders3BTests/Pods-FreeFinders3BTests.debug.xcconfig"; sourceTree = "<group>"; };
 		734303152919CCC90064974F /* CreateItemView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CreateItemView.storyboard; sourceTree = "<group>"; };
 		734303192919CCD00064974F /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		738572BA2919F50000D0F5B5 /* ViewItem.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ViewItem.storyboard; sourceTree = "<group>"; };
 		738572C4291A052800D0F5B5 /* ItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
 		738572C6291A053600D0F5B5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		84FA18F0DAEB2A9FC97999D3 /* Pods-FreeFinders3BTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeFinders3BTests.release.xcconfig"; path = "Target Support Files/Pods-FreeFinders3BTests/Pods-FreeFinders3BTests.release.xcconfig"; sourceTree = "<group>"; };
-		9E760A1BCDADF10820FC1B63 /* Pods_FreeFinders3B.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreeFinders3B.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A7341275FDFB1C9A81D8E8F7 /* Pods-FreeFinders3B-FreeFinders3BUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeFinders3B-FreeFinders3BUITests.release.xcconfig"; path = "Target Support Files/Pods-FreeFinders3B-FreeFinders3BUITests/Pods-FreeFinders3B-FreeFinders3BUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BD6DF2FA291B1BA400378E42 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		BD6DF2FC291B1BAF00378E42 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BD6DF306291B247400378E42 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
-		CAB549F64377E4598B922F36 /* Pods-FreeFinders3B.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeFinders3B.release.xcconfig"; path = "Target Support Files/Pods-FreeFinders3B/Pods-FreeFinders3B.release.xcconfig"; sourceTree = "<group>"; };
-		DC117F32C6CBD91059E83E0D /* Pods_FreeFinders3BTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreeFinders3BTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E9A7859189C3B99A0FA59A83 /* Pods-FreeFinders3B.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeFinders3B.debug.xcconfig"; path = "Target Support Files/Pods-FreeFinders3B/Pods-FreeFinders3B.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,11 +118,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD6DF2F1291B1AD800378E42 /* GoogleSignInSwift in Frameworks */,
-				18C3200511EC9992A27AEABA /* Pods_FreeFinders3B.framework in Frameworks */,
 				BD6DF302291B1D5500378E42 /* Realm in Frameworks */,
 				BD6DF304291B1D5500378E42 /* RealmSwift in Frameworks */,
-				BD6DF2EF291B1AD800378E42 /* GoogleSignIn in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +127,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA08D5DED4D76404EB8F4E34 /* Pods_FreeFinders3BTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,23 +134,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDA4682FCBF3E710C4CBB078 /* Pods_FreeFinders3B_FreeFinders3BUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		29EE822270C7B328BC7A4EA8 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				9E760A1BCDADF10820FC1B63 /* Pods_FreeFinders3B.framework */,
-				67801B4C3664E9F29D4F9CD0 /* Pods_FreeFinders3B_FreeFinders3BUITests.framework */,
-				DC117F32C6CBD91059E83E0D /* Pods_FreeFinders3BTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		484DC4852919C84600AE095B = {
 			isa = PBXGroup;
 			children = (
@@ -179,7 +150,6 @@
 				484DC4B12919C84700AE095B /* FreeFinders3BUITests */,
 				484DC48F2919C84600AE095B /* Products */,
 				B1D259C5C33D4441F8BE5F68 /* Pods */,
-				29EE822270C7B328BC7A4EA8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -231,7 +201,7 @@
 		5A7713BD291AFD6300040D8A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5A7713CD291AFD6300040D8A /* Pods_FreeFinders3B.framework */,
+				5A7713CD291AFD6300040D8A /* Pods-FreeFinders3B */,
 				5A7713CF291AFD6300040D8A /* Pods-FreeFinders3B-FreeFinders3BUITests */,
 				5A7713D1291AFD6300040D8A /* Pods-FreeFinders3BTests */,
 			);
@@ -269,12 +239,6 @@
 				5A7713B6291AFD6300040D8A /* Manifest.lock */,
 				5A7713BC291AFD6300040D8A /* Pods.xcodeproj */,
 				5A7713B7291AFD6300040D8A /* Target Support Files */,
-				E9A7859189C3B99A0FA59A83 /* Pods-FreeFinders3B.debug.xcconfig */,
-				CAB549F64377E4598B922F36 /* Pods-FreeFinders3B.release.xcconfig */,
-				6F9D69221B4B881DEC532B1B /* Pods-FreeFinders3B-FreeFinders3BUITests.debug.xcconfig */,
-				A7341275FDFB1C9A81D8E8F7 /* Pods-FreeFinders3B-FreeFinders3BUITests.release.xcconfig */,
-				71CAEC691908D9110967CA6F /* Pods-FreeFinders3BTests.debug.xcconfig */,
-				84FA18F0DAEB2A9FC97999D3 /* Pods-FreeFinders3BTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -296,7 +260,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 484DC4B82919C84700AE095B /* Build configuration list for PBXNativeTarget "FreeFinders3B" */;
 			buildPhases = (
-				C14469D829AF8857389420A2 /* [CP] Check Pods Manifest.lock */,
 				484DC48A2919C84600AE095B /* Sources */,
 				484DC48B2919C84600AE095B /* Frameworks */,
 				484DC48C2919C84600AE095B /* Resources */,
@@ -307,8 +270,6 @@
 			);
 			name = FreeFinders3B;
 			packageProductDependencies = (
-				BD6DF2EE291B1AD800378E42 /* GoogleSignIn */,
-				BD6DF2F0291B1AD800378E42 /* GoogleSignInSwift */,
 				BD6DF301291B1D5500378E42 /* Realm */,
 				BD6DF303291B1D5500378E42 /* RealmSwift */,
 			);
@@ -320,7 +281,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 484DC4BB2919C84700AE095B /* Build configuration list for PBXNativeTarget "FreeFinders3BTests" */;
 			buildPhases = (
-				C12F50E0254EC4CA7765395E /* [CP] Check Pods Manifest.lock */,
 				484DC4A02919C84700AE095B /* Sources */,
 				484DC4A12919C84700AE095B /* Frameworks */,
 				484DC4A22919C84700AE095B /* Resources */,
@@ -339,7 +299,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 484DC4BE2919C84700AE095B /* Build configuration list for PBXNativeTarget "FreeFinders3BUITests" */;
 			buildPhases = (
-				674D9E26CB55FBE6A448E1EB /* [CP] Check Pods Manifest.lock */,
 				484DC4AA2919C84700AE095B /* Sources */,
 				484DC4AB2919C84700AE095B /* Frameworks */,
 				484DC4AC2919C84700AE095B /* Resources */,
@@ -387,8 +346,7 @@
 			);
 			mainGroup = 484DC4852919C84600AE095B;
 			packageReferences = (
-				BD6DF2ED291B1AD800378E42 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
-				BD6DF300291B1D5500378E42 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				BD6DF300291B1D5500378E42 /* XCRemoteSwiftPackageReference "realm-swift.git" */,
 			);
 			productRefGroup = 484DC48F2919C84600AE095B /* Products */;
 			projectDirPath = "";
@@ -408,7 +366,7 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		5A7713CD291AFD6300040D8A /* Pods_FreeFinders3B.framework */ = {
+		5A7713CD291AFD6300040D8A /* Pods-FreeFinders3B */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			name = "Pods-FreeFinders3B";
@@ -472,75 +430,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		674D9E26CB55FBE6A448E1EB /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FreeFinders3B-FreeFinders3BUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C12F50E0254EC4CA7765395E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FreeFinders3BTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C14469D829AF8857389420A2 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FreeFinders3B-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		484DC48A2919C84600AE095B /* Sources */ = {
@@ -728,7 +617,6 @@
 		};
 		484DC4B92919C84700AE095B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E9A7859189C3B99A0FA59A83 /* Pods-FreeFinders3B.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -758,7 +646,6 @@
 		};
 		484DC4BA2919C84700AE095B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CAB549F64377E4598B922F36 /* Pods-FreeFinders3B.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -788,7 +675,6 @@
 		};
 		484DC4BC2919C84700AE095B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 71CAEC691908D9110967CA6F /* Pods-FreeFinders3BTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -809,7 +695,6 @@
 		};
 		484DC4BD2919C84700AE095B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84FA18F0DAEB2A9FC97999D3 /* Pods-FreeFinders3BTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -830,7 +715,6 @@
 		};
 		484DC4BF2919C84700AE095B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F9D69221B4B881DEC532B1B /* Pods-FreeFinders3B-FreeFinders3BUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -849,7 +733,6 @@
 		};
 		484DC4C02919C84700AE095B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A7341275FDFB1C9A81D8E8F7 /* Pods-FreeFinders3B-FreeFinders3BUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -908,15 +791,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		BD6DF2ED291B1AD800378E42 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-		BD6DF300291B1D5500378E42 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+		BD6DF300291B1D5500378E42 /* XCRemoteSwiftPackageReference "realm-swift.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-swift.git";
 			requirement = {
@@ -927,24 +802,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		BD6DF2EE291B1AD800378E42 /* GoogleSignIn */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = BD6DF2ED291B1AD800378E42 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
-			productName = GoogleSignIn;
-		};
-		BD6DF2F0291B1AD800378E42 /* GoogleSignInSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = BD6DF2ED291B1AD800378E42 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
-			productName = GoogleSignInSwift;
-		};
 		BD6DF301291B1D5500378E42 /* Realm */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = BD6DF300291B1D5500378E42 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			package = BD6DF300291B1D5500378E42 /* XCRemoteSwiftPackageReference "realm-swift.git" */;
 			productName = Realm;
 		};
 		BD6DF303291B1D5500378E42 /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = BD6DF300291B1D5500378E42 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			package = BD6DF300291B1D5500378E42 /* XCRemoteSwiftPackageReference "realm-swift.git" */;
 			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
