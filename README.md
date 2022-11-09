@@ -17,7 +17,7 @@ We've implemented the following use cases:
 * Delete item
 * Comment on post
 * Refresh map
-* Sign in
+* Sign in (we've implemented the function for this but have not connected the UI yet, this will come in iteration 2)
 * View map/list
 * View posting
 
@@ -38,6 +38,7 @@ Iteration 2 will (hopefully) include the following features:
 * Filtering
 * UI/UX Improvements
 * Sign out
+* Sing in UI connection 
 * Counter/quantity functionality
 * Adding photos (?) -- we are unsure if we can get the capability to store images somewhere, so this feature might be dropped
 ### (8) Other information 
