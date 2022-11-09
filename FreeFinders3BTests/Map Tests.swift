@@ -6,8 +6,10 @@
 //
 
 import XCTest
-import UIKit
 import MapKit
+import RealmSwift
+//import Realm.Private
+@testable import FreeFinders3B
 
 final class MapKitTests: XCTestCase {
     //declaring the ViewController under test as an implicitly unwrapped optional
@@ -17,9 +19,9 @@ final class MapKitTests: XCTestCase {
         // This is where setup code is
         super.setUp()
                 //get the storyboard the ViewController under test is inside
-                let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: NSBundle(forClass: self.dynamicType))
+                let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: Bundle(for: type(of: self)))
                 //get the ViewController we want to test from the storyboard (note the identifier is the id explicitly set in the identity inspector)
-                viewControllerUnderTest = storyboard.instantiateViewControllerWithIdentifier("MyViewController") as ViewController
+        viewControllerUnderTest = storyboard.instantiateViewController(withIdentifier: "MyViewController") as! ViewController
                 //load view hierarchy
                 if(viewControllerUnderTest != nil) {
                     viewControllerUnderTest.loadView()
@@ -35,22 +37,22 @@ final class MapKitTests: XCTestCase {
         // Checks if map is loaded in the test view
         XCTAssertNotNil(viewControllerUnderTest.mapView, "There is no Map View in unit test")
     }
-    func isMapReloaded() {
+    func isMapReloaded() async {
         // Checks if map is loaded in the test view
         // Functino to reload the map
-        Item.refresh()
+        await refresh()
         
         // Asserts that the map is loaded and ready to go
-        XCTAssertNotNil(viewControllerUnderTest.mapView, "There is no Map View in unit test")
+        //XCTAssertNotNil(viewControllerUnderTest.mapView, "There is no Map View in unit test")
         
         // Checks for the annotations on the map and if its greater than 0.
-        let annotationsOnMap = self.viewControllerUnderTest.mapView.annotations
+        let annotationsOnMap = await self.viewControllerUnderTest.mapView.annotations
         XCTAssertGreaterThan(annotationsOnMap.count, 0)
     }
     
     func isMapViewProper() {
         // Checks if the view controller is aligned with apple mapkit protocol
-        XCTAssert(viewControllerUnderTest.conformsToProtocol(MKMapViewDelegate), "ViewController violates MKMapViewDelegate protocol")
+        XCTAssert(self.viewControllerUnderTest.conforms(to: MKMapViewDelegate.self), "ViewController violates MKMapViewDelegate protocol")
     }
     
     func isMapProper() {
@@ -63,28 +65,6 @@ final class MapKitTests: XCTestCase {
         XCTAssert(viewControllerUnderTest.mapView.mapType == MKMapType.standard);
     }
     
-    func testControllerImplementsMKMapViewDelegateMethods() {
-        // View Controller test if it is responsive to selecting annotations
-        XCTAssert(viewControllerUnderTest.respondsToSelector(Selector("mapView:viewForAnnotation:")), "ViewController does not implement mapView:viewForAnnotation")
-    }
-    
-    func testItemToAnnot() throws{
-        //Transforms an Item into a GEOJson then into an annotation that can be placed on the map
-        var item_valid_id = User.create_item(
-            name: "test name",
-            type: "test type",
-            detail: "detail_1",
-            coordinate: CLLocationCoordinate2D(latitude: 0.0, longitude: 0.0),
-            quantity: 1
-        )
-        XCTAssertEqual(item_valid_id.title, "test_title", "Wrong title")
-        XCTAssertEqual(item_valid_id.subtitle, "test sub", "Wrong subtitle")
-        
-        // Checks if we can add the annotation
-        let hasTestAnno = self.hasTargetAnnotation(sampleAnnotation: item_valid_id)
-        XCTAssertTrue(item_valid_id)
-    }
-    
     func testControllerAddsAnnotationsToMapView() {
         // Tests if any number of annotations is on the map
         let annotationsOnMap = self.viewControllerUnderTest.mapView.annotations
@@ -95,7 +75,7 @@ final class MapKitTests: XCTestCase {
        let mapAnnotations = self.viewControllerUnderTest.mapView.annotations
        var hasTargetAnnotation = false
        for anno in mapAnnotations {
-           if (anno.isKindOfClass(sampleAnnotation)) {
+           if (anno.isKind(of: Item.self)) {
                hasTargetAnnotation = true
            }
        }

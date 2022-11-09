@@ -9,7 +9,7 @@ import UIKit
 import MapKit
 
 class ViewController: UIViewController {
-    @IBOutlet private var mapView: MKMapView!
+    @IBOutlet var mapView: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
         view.insetsLayoutMarginsFromSafeArea = false

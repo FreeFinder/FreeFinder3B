@@ -6,10 +6,12 @@
 //
 
 import XCTest
+import MapKit
+import RealmSwift
+//import Realm.Private
+@testable import FreeFinders3B
 
 final class GoogleTests: XCTestCase {
-    var ref: DatabaseReference!
-    ref = FIRDatabase.database().reference().child("items").child("id")
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -27,25 +29,15 @@ final class GoogleTests: XCTestCase {
         // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
     }
 
-    func testCreateUser() throws{
+    func TestSignIn() throws{
         //will create two users, one with valid email one without.
-        //Note that a user has two fields: ID and email.
-
-        //valid user will exist in the databse
-        let goodUser = create_user("cbgravitt@uchicago.edu")
-        ref.child("users/id/\(goodUser.id)").getData(completion: {error, snapshot in guard error == nil else {
-            print(error!.localizedDescription)
-            return;
-        }
-            //check that we found the proper ID, meaning it was stored
-            let id = snapshot.value as? String ?? "Unknown";
-            XCTAssertEqual(id, goodUser.id, "Wrong ID found");
-        })
-
-        //A user with an invalid email should have the initializer return nil
-        let badUser = create_user("cbgravitt@gmail.com")
-        XCTAssertNil(badUser, "User erroneously created");
+        let goodUser = await sign_in(email: "cbgravitt@uchicago.edu")
+        XCTAssertEqual(goodUser!.email, "cbgravitt@uchicago.edu")
         
+        //invalid users can't sign in, return null
+        let badUser = await sign_in(email: "cbgravitt@google.com")
+        XCTAssertNil(badUser)
+
     }
 
     func testPerformanceExample() throws {
