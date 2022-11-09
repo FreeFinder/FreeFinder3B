@@ -22,6 +22,7 @@ class User {
         if (id == ObjectId()) {
             await db_add_user(email: email);
         }
+        
     }
     
     func db_add_user(email: String) async {
