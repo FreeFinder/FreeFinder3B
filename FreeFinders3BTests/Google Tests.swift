@@ -29,7 +29,7 @@ final class GoogleTests: XCTestCase {
         // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
     }
 
-    func TestSignIn() throws{
+    func TestSignIn() async {
         //will create two users, one with valid email one without.
         let goodUser = await sign_in(email: "cbgravitt@uchicago.edu")
         XCTAssertEqual(goodUser!.email, "cbgravitt@uchicago.edu")

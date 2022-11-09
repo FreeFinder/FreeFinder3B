@@ -35,7 +35,7 @@ final class Mapkit_Tests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
-    func testRefreshMap() {
+    func testRefreshMap() async {
         let app = XCUIApplication()
         app.launch()
 
