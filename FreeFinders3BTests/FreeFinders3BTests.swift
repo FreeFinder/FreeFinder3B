@@ -23,7 +23,7 @@ final class FreeFinders3BTests: XCTestCase {
             
         // valid item
         let v_item = await test_user.create_item(name: "test_item", type: "test_type", detail: "test_detail",  coordinate: CLLocationCoordinate2DMake(90.000, 135.000), quantity: 1)
-        let res = (await v_item?.db_item_exists())
+        let res = (await v_item!.db_item_exists())
         XCTAssertTrue(res)
             
         
@@ -111,14 +111,14 @@ final class FreeFinders3BTests: XCTestCase {
         let v_item = await test_user3.create_item(name: "test_item", type: "test_type", detail: "test_detail",  coordinate: CLLocationCoordinate2DMake(90.000, 135.000), quantity: 9)
         
         //checks in db
-        let res = await (v_item?.db_item_exists())
+        let res = await (v_item!.db_item_exists())
         XCTAssertTrue(res)
         
         //deletes item
         await v_item?.delete_Item()
         
         //checks not in db
-        let res2 = await (v_item?.db_item_exists())
+        let res2 = await (v_item!.db_item_exists())
         XCTAssertTrue(res2)
         
     }
