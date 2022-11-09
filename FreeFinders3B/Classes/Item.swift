@@ -171,7 +171,7 @@ class Item: NSObject, MKAnnotation{
             if (await db_item_exists()) {
                 self.comments.append(comment)
                 self.db_add_comment(comment: comment)
-                await observer.refresh()
+                await refresh()
                 return true
             }
             else{
@@ -184,7 +184,7 @@ class Item: NSObject, MKAnnotation{
         //deletes if item in database 
         if (await self.db_item_exists()){
             await db_delete_item();
-            await observer.refresh();
+            await refresh();
         }
     }
 }
