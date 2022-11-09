@@ -6,7 +6,7 @@ target 'FreeFinders3B' do
   use_frameworks!
 
   # Pods for FreeFinders3B
-  pod 'GoogleSignIn', '~>6.0'
+
 
   target 'FreeFinders3BTests' do
     inherit! :search_paths

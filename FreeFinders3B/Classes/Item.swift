@@ -7,7 +7,7 @@
 
 import Foundation
 import SwiftUI
-import GoogleSignIn
+//import GoogleSignIn
 import MapKit
 import RealmSwift
 
@@ -171,7 +171,7 @@ class Item: NSObject, MKAnnotation{
             if (await db_item_exists()) {
                 self.comments.append(comment)
                 self.db_add_comment(comment: comment)
-                refresh()
+                await observer.refresh()
                 return true
             }
             else{
@@ -180,8 +180,8 @@ class Item: NSObject, MKAnnotation{
         }
     }
     
-    func delete_Item() async  {
+    func delete_Item() async {
         await db_delete_item();
-        refresh();
+        await observer.refresh();
     }
 }

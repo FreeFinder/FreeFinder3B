@@ -10,11 +10,11 @@ import Foundation
 
 class ItemsTableViewController: UITableViewController {
 
-    var items = refresh()
+    var items: [Item] = [] // refresh()
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        items = refresh()
+        items = [] // refresh()
     }
     
     override func viewDidLoad() {

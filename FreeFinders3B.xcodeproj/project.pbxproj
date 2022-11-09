@@ -59,27 +59,6 @@
 			remoteGlobalIDString = 484DC48D2919C84600AE095B;
 			remoteInfo = FreeFinders3B;
 		};
-		5A7713C6291AFD6300040D8A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5A7713BC291AFD6300040D8A /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3FD1B4C1246D643E9476438C28048FA8;
-			remoteInfo = AppAuth;
-		};
-		5A7713C8291AFD6300040D8A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5A7713BC291AFD6300040D8A /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 6FD122EA0AB9AB2A8FFA5F676C795DF0;
-			remoteInfo = GTMAppAuth;
-		};
-		5A7713CA291AFD6300040D8A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5A7713BC291AFD6300040D8A /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C1998E0D8085221AD87F89B614C10E52;
-			remoteInfo = GTMSessionFetcher;
-		};
 		5A7713CC291AFD6300040D8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5A7713BC291AFD6300040D8A /* Pods.xcodeproj */;
@@ -120,7 +99,7 @@
 		48B38BAE291A14FF0031D619 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = main.swift; path = ViewControllers/main.swift; sourceTree = "<group>"; };
 		5A7713AA2919F20C00040D8A /* List.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = List.storyboard; sourceTree = "<group>"; };
 		5A7713B0291A0F9E00040D8A /* ItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewController.swift; sourceTree = "<group>"; };
-		5A7713B2291AFD0200040D8A /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		5A7713B2291AFD0200040D8A /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5A7713B4291AFD0A00040D8A /* Podfile.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
 		5A7713B6291AFD6300040D8A /* Manifest.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Manifest.lock; sourceTree = "<group>"; };
 		5A7713B7291AFD6300040D8A /* Target Support Files */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Target Support Files"; sourceTree = "<group>"; };
@@ -252,9 +231,6 @@
 		5A7713BD291AFD6300040D8A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5A7713C7291AFD6300040D8A /* AppAuth.framework */,
-				5A7713C9291AFD6300040D8A /* GTMAppAuth.framework */,
-				5A7713CB291AFD6300040D8A /* GTMSessionFetcher.framework */,
 				5A7713CD291AFD6300040D8A /* Pods_FreeFinders3B.framework */,
 				5A7713CF291AFD6300040D8A /* Pods-FreeFinders3B-FreeFinders3BUITests */,
 				5A7713D1291AFD6300040D8A /* Pods-FreeFinders3BTests */,
@@ -324,7 +300,6 @@
 				484DC48A2919C84600AE095B /* Sources */,
 				484DC48B2919C84600AE095B /* Frameworks */,
 				484DC48C2919C84600AE095B /* Resources */,
-				F4C5BE5C023B6D53A639CFDF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -368,7 +343,6 @@
 				484DC4AA2919C84700AE095B /* Sources */,
 				484DC4AB2919C84700AE095B /* Frameworks */,
 				484DC4AC2919C84700AE095B /* Resources */,
-				6517F7C0506CE117661E0AD5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -434,30 +408,10 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		5A7713C7291AFD6300040D8A /* AppAuth.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = AppAuth.framework;
-			remoteRef = 5A7713C6291AFD6300040D8A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		5A7713C9291AFD6300040D8A /* GTMAppAuth.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = GTMAppAuth.framework;
-			remoteRef = 5A7713C8291AFD6300040D8A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		5A7713CB291AFD6300040D8A /* GTMSessionFetcher.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = GTMSessionFetcher.framework;
-			remoteRef = 5A7713CA291AFD6300040D8A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		5A7713CD291AFD6300040D8A /* Pods_FreeFinders3B.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
+			name = "Pods-FreeFinders3B";
 			path = Pods_FreeFinders3B.framework;
 			remoteRef = 5A7713CC291AFD6300040D8A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -520,23 +474,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6517F7C0506CE117661E0AD5 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FreeFinders3B-FreeFinders3BUITests/Pods-FreeFinders3B-FreeFinders3BUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FreeFinders3B-FreeFinders3BUITests/Pods-FreeFinders3B-FreeFinders3BUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FreeFinders3B-FreeFinders3BUITests/Pods-FreeFinders3B-FreeFinders3BUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		674D9E26CB55FBE6A448E1EB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -601,23 +538,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F4C5BE5C023B6D53A639CFDF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FreeFinders3B/Pods-FreeFinders3B-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FreeFinders3B/Pods-FreeFinders3B-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FreeFinders3B/Pods-FreeFinders3B-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
