@@ -10,8 +10,8 @@ import SwiftUI
 import MapKit
 
 
-let user = await User(email: "mongodb@gmail.com");
-let observer = await AppData(user: user);
+//let user = await User(email: "mongodb@gmail.com");
+//let observer = await AppData(user: user);
 
 func sign_in(email: String) async -> User?{
     if email.hasSuffix("@uchicago.edu"){
