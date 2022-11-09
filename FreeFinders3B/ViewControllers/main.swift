@@ -7,11 +7,8 @@
 
 import Foundation
 import SwiftUI
-//import GoogleSignIn
 import MapKit
 
-let user1 = await User(email: "mongodb@gmail.com");
-let observer = await AppData(user: user1);
 
 func sign_in(email: String) async -> User?{
     if email.hasSuffix("@uchicago.edu"){
@@ -19,3 +16,10 @@ func sign_in(email: String) async -> User?{
     }
     return nil;
 }
+
+let appDelegateClass: AnyClass = NSClassFromString("AppDelegate") ?? AppDelegate.self
+UIApplicationMain(CommandLine.argc, CommandLine.unsafeArgv, nil, NSStringFromClass(appDelegateClass))
+
+//dispatchMain();
+
+
