@@ -11,10 +11,10 @@ import GoogleSignIn
 import MapKit
 
 class User {
-    var id : String?
-    var email : String?
+    var id : String
+    var email : String
 
-    init(ID: String?, mail: String?){
+    init(ID: String, mail: String){
         self.id = ID
         self.email = mail
         db_add_user()
@@ -28,20 +28,20 @@ class User {
         // return however it needs formatting for writing item creator to db
     }
             
-    func create_item(name: String?, type: String?, detail: String?, coordinate: CLLocationCoordinate2D) -> Bool{
+    func create_item(name: String, type: String, detail: String, coordinate: CLLocationCoordinate2D) async -> Bool{
         // check field validity
-        _ = Item(name: name,type: type,detail: detail,coordinate: coordinate,creator: self)
+        await _ = Item(name: name,type: type,detail: detail,coordinate: coordinate,creator_email: self.email)
         refresh()
         return true
     }
     
-    func comment(i: Item, comment: String)-> Bool{
-        return i.add_Comment(comment: comment)
+    func comment(i: Item, comment: String) async -> Bool{
+        return await i.add_Comment(comment: comment)
 
     }
     
-    func delete_item(i: Item) -> Bool{
-        return i.delete_Item()
+    func delete_item(i: Item) async{
+        await i.delete_Item()
     }
     
     func sign_out() -> Bool{
