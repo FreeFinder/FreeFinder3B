@@ -4,7 +4,7 @@
 You will need XCode in order to compile our code. Once you've cloned the repo, open it up in XCode. 
 If you experience troubles/errors with the packages, try quitting XCode and reopening it. 
 ### (2) How to run the code
-Press run in XCode (the play button on the top left). Alternatively, do command R or go to product then run in the menu bar. Make sure the scheme is set to FreeFinders3B.
+Press run in XCode (the play button on the top left). Alternatively, do command R or go to product then run in the menu bar. Make sure the scheme is set to FreeFinders3B. We tested outs on iPhone 14 Pro simulator running iOS 16.1
 ### (3) How to run the unit test cases
 Run command U (alternatively go to Product in the menu bar and then press test).
 ### (4) Some acceptance tests to try (i.e., what inputs to use, and what outputs are expected)
