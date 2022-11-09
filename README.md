@@ -35,7 +35,7 @@ Main pairs:
 * Charlie and William - Sign In and MapKit
 * Jordan and Sydney - add comment, create item and delete item and testing update
 * Ellen and Ruxi - UI/UX (with help from Jordan) 
-* Steven and Madhav - Backend/Database
+* Steven and Madhav - Backend/Database (this has a lot of overlap with the functionality implemented by the other teams as we isolated the database calls) 
 
 However, towards the end it became more of a group effort in finishing up the app. 
 ### (7) Changes: design changes or unit test changes from earlier milestones
