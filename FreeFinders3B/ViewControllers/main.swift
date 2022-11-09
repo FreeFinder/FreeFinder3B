@@ -10,19 +10,6 @@ import SwiftUI
 import GoogleSignIn
 import MapKit
 
-func refresh()-> [Item]{
-    let items = db_get_all_items()
-    for item in items{
-        continue
-        //itemMap.addAnnotation(item)
-    }
-    return items
-}
-
-private func db_get_all_items()->[Item]{
-    // for each item in database, initialize an item object and put in list
-    return []
-}
 
 
 func sign_in() -> User?{
