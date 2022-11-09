@@ -17,6 +17,7 @@
 		484DC4B32919C84700AE095B /* FreeFinders3BUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484DC4B22919C84700AE095B /* FreeFinders3BUITests.swift */; };
 		484DC4B52919C84700AE095B /* FreeFinders3BUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484DC4B42919C84700AE095B /* FreeFinders3BUITestsLaunchTests.swift */; };
 		48C191C9291B7197000466F7 /* Map Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C191C8291B7196000466F7 /* Map Tests.swift */; };
+		48C191CD291B773E000466F7 /* Google Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C191CC291B773E000466F7 /* Google Tests.swift */; };
 		5A7713AB2919F20C00040D8A /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A7713AA2919F20C00040D8A /* List.storyboard */; };
 		5A7713B1291A0F9E00040D8A /* ItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7713B0291A0F9E00040D8A /* ItemTableViewController.swift */; };
 		734303162919CCC90064974F /* CreateItemView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 734303152919CCC90064974F /* CreateItemView.storyboard */; };
@@ -71,6 +72,7 @@
 		484DC4B22919C84700AE095B /* FreeFinders3BUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeFinders3BUITests.swift; sourceTree = "<group>"; };
 		484DC4B42919C84700AE095B /* FreeFinders3BUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeFinders3BUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		48C191C8291B7196000466F7 /* Map Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Map Tests.swift"; sourceTree = "<group>"; };
+		48C191CC291B773E000466F7 /* Google Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Google Tests.swift"; sourceTree = "<group>"; };
 		5A7713AA2919F20C00040D8A /* List.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = List.storyboard; sourceTree = "<group>"; };
 		5A7713B0291A0F9E00040D8A /* ItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewController.swift; sourceTree = "<group>"; };
 		734303152919CCC90064974F /* CreateItemView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CreateItemView.storyboard; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 		484DC4A72919C84700AE095B /* FreeFinders3BTests */ = {
 			isa = PBXGroup;
 			children = (
+				48C191CC291B773E000466F7 /* Google Tests.swift */,
 				48C191C8291B7196000466F7 /* Map Tests.swift */,
 				484DC4A82919C84700AE095B /* FreeFinders3BTests.swift */,
 			);
@@ -368,6 +371,7 @@
 			files = (
 				484DC4A92919C84700AE095B /* FreeFinders3BTests.swift in Sources */,
 				48C191C9291B7197000466F7 /* Map Tests.swift in Sources */,
+				48C191CD291B773E000466F7 /* Google Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
