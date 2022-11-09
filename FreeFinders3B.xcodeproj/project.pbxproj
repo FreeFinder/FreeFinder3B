@@ -120,7 +120,7 @@
 		48B38BAE291A14FF0031D619 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = main.swift; path = ViewControllers/main.swift; sourceTree = "<group>"; };
 		5A7713AA2919F20C00040D8A /* List.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = List.storyboard; sourceTree = "<group>"; };
 		5A7713B0291A0F9E00040D8A /* ItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewController.swift; sourceTree = "<group>"; };
-		5A7713B2291AFD0200040D8A /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		5A7713B2291AFD0200040D8A /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5A7713B4291AFD0A00040D8A /* Podfile.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
 		5A7713B6291AFD6300040D8A /* Manifest.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Manifest.lock; sourceTree = "<group>"; };
 		5A7713B7291AFD6300040D8A /* Target Support Files */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Target Support Files"; sourceTree = "<group>"; };
@@ -324,7 +324,6 @@
 				484DC48A2919C84600AE095B /* Sources */,
 				484DC48B2919C84600AE095B /* Frameworks */,
 				484DC48C2919C84600AE095B /* Resources */,
-				F4C5BE5C023B6D53A639CFDF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -368,7 +367,6 @@
 				484DC4AA2919C84700AE095B /* Sources */,
 				484DC4AB2919C84700AE095B /* Frameworks */,
 				484DC4AC2919C84700AE095B /* Resources */,
-				6517F7C0506CE117661E0AD5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -414,7 +412,7 @@
 			mainGroup = 484DC4852919C84600AE095B;
 			packageReferences = (
 				BD6DF2ED291B1AD800378E42 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
-				BD6DF300291B1D5500378E42 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				BD6DF300291B1D5500378E42 /* XCRemoteSwiftPackageReference "realm-swift.git" */,
 			);
 			productRefGroup = 484DC48F2919C84600AE095B /* Products */;
 			projectDirPath = "";
@@ -520,23 +518,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6517F7C0506CE117661E0AD5 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FreeFinders3B-FreeFinders3BUITests/Pods-FreeFinders3B-FreeFinders3BUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FreeFinders3B-FreeFinders3BUITests/Pods-FreeFinders3B-FreeFinders3BUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FreeFinders3B-FreeFinders3BUITests/Pods-FreeFinders3B-FreeFinders3BUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		674D9E26CB55FBE6A448E1EB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -601,23 +582,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F4C5BE5C023B6D53A639CFDF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FreeFinders3B/Pods-FreeFinders3B-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FreeFinders3B/Pods-FreeFinders3B-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FreeFinders3B/Pods-FreeFinders3B-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -996,7 +960,7 @@
 				kind = branch;
 			};
 		};
-		BD6DF300291B1D5500378E42 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+		BD6DF300291B1D5500378E42 /* XCRemoteSwiftPackageReference "realm-swift.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-swift.git";
 			requirement = {
@@ -1019,12 +983,12 @@
 		};
 		BD6DF301291B1D5500378E42 /* Realm */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = BD6DF300291B1D5500378E42 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			package = BD6DF300291B1D5500378E42 /* XCRemoteSwiftPackageReference "realm-swift.git" */;
 			productName = Realm;
 		};
 		BD6DF303291B1D5500378E42 /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = BD6DF300291B1D5500378E42 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			package = BD6DF300291B1D5500378E42 /* XCRemoteSwiftPackageReference "realm-swift.git" */;
 			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
