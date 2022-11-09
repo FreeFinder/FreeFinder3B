@@ -57,7 +57,7 @@ class Item: NSObject, MKAnnotation{
     var title: String? { return name }
     var subtitle: String? { return type }
     
-    private func db_add_item (
+    func db_add_item (
         name: String,
         type: String,
         coordinates: CLLocationCoordinate2D,
@@ -94,7 +94,7 @@ class Item: NSObject, MKAnnotation{
         }
     }
     
-    private func db_item_exists() async -> Bool {
+    func db_item_exists() async -> Bool {
         var res = false;
         
         do {
@@ -126,7 +126,7 @@ class Item: NSObject, MKAnnotation{
         return res;
     }
     
-    private func db_delete_item() async -> Bool {
+    func db_delete_item() async -> Bool {
         var res = false;
         
         do {
@@ -154,12 +154,12 @@ class Item: NSObject, MKAnnotation{
         return res;
     }
     
-    private func db_get_comments() -> [String] {
+   func db_get_comments() -> [String] {
         // get current comments
         return []
     }
     
-    private func db_add_comment(comment : String) {
+    func db_add_comment(comment : String) {
         // add passed comment to db
     }
     
@@ -181,7 +181,10 @@ class Item: NSObject, MKAnnotation{
     }
     
     func delete_Item() async {
-        await db_delete_item();
-        await observer.refresh();
+        //deletes if item in database 
+        if (await self.db_item_exists()){
+            await db_delete_item();
+            await observer.refresh();
+        }
     }
 }

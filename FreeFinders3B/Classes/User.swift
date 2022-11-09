@@ -52,6 +52,16 @@ class User {
         }
     }
     
+    func create_item(name: String, type: String, detail: String, coordinate: CLLocationCoordinate2D,quantity: Int) async -> Item?{
+        // check field validity
+        if ((detail.count > 0) && (detail.count < 280) && (name.count < 100) && (name.count > 0)) {
+            let i = await Item(name: name,type: type,detail: detail,coordinate: coordinate,creator_email: self.email)
+            await i.db_add_item(name: name,type: type,coordinates: coordinate, details: detail,creator_email: self.email)
+            return i
+        }
+        return nil
+    }
+    
     func comment(i: Item, comment: String) async -> Bool{
         return await i.add_Comment(comment: comment)
 
