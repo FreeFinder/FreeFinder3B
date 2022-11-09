@@ -22,8 +22,8 @@ class AppData {
         await db_get_all_items();
     }
     
-    func refresh() {
-        db_get_all_items();
+    func refresh() async {
+        await db_get_all_items();
     }
     
     func db_get_all_items() async {

@@ -114,6 +114,7 @@
                                     <color key="baseBackgroundColor" red="0.75294117650000003" green="0.84705882349999995" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="post:" destination="D2g-kk-0l8" eventType="touchUpInside" id="jU7-1a-pet"/>
                                     <segue destination="DWT-a0-23z" kind="presentation" animates="NO" modalPresentationStyle="fullScreen" id="K7R-1t-o7f"/>
                                 </connections>
                             </button>
@@ -123,6 +124,7 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f1n-GD-0yb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="D2g-kk-0l8" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="557" y="-397"/>
         </scene>
