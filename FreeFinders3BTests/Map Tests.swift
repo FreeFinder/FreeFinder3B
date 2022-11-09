@@ -21,7 +21,7 @@ final class MapKitTests: XCTestCase {
                 //get the storyboard the ViewController under test is inside
                 let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: Bundle(for: type(of: self)))
                 //get the ViewController we want to test from the storyboard (note the identifier is the id explicitly set in the identity inspector)
-        viewControllerUnderTest = storyboard.instantiateViewController(withIdentifier: "MyViewController") as! ViewController
+        viewControllerUnderTest = storyboard.instantiateViewController(withIdentifier: "MyViewController") as? ViewController
                 //load view hierarchy
                 if(viewControllerUnderTest != nil) {
                     viewControllerUnderTest.loadView()
