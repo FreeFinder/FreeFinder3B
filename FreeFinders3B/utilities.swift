@@ -11,6 +11,10 @@ import Foundation
 func refresh() async -> [Item] {
     let user = await User(email: "mongodb@gmail.com");
     let observer = await AppData(user: user);
-    
-    return await observer.db_get_all_items();
+    mapView!.removeAnnotations(mapView!.annotations)
+    let items = await observer.db_get_all_items();
+    for item in items{
+        mapView.addAnnotation(item)
+    }
+    return items
 }
