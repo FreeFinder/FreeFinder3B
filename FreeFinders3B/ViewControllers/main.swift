@@ -12,23 +12,9 @@ import MapKit
 
 
 
-func sign_in() -> User?{
-//    GIDSignIn.sharedInstance().restorePreviousSignIn()
-//    var u = GIDSignIn.sharedInstance().currentUser
-//    if u != nil{
-//        let mail = u?.profile.email
-//        let ID = u?.userID
-//        return User(ID: ID, mail: mail)
-//    }
-//    GIDSignIn.sharedInstance()?.signIn()
-//    u = GIDSignIn.sharedInstance().currentUser
-//    if u != nil{
-//        let mail = u?.profile.email
-//        let ID = u?.userID
-//        //TODO: add to DB
-//        return User(ID: ID, mail: mail)
-//    }else{
-//        return nil
-//    }
+func sign_in(email: String) async -> User?{
+    if email.hasSuffix("@uchicago.edu"){
+        return await User(email: email)
+    }
     return nil;
 }
