@@ -38,7 +38,7 @@ Iteration 2 will (hopefully) include the following features:
 * Filtering
 * UI/UX Improvements
 * Sign out
-* Sing in UI connection 
+* Sign in UI connection 
 * Counter/quantity functionality
 * Adding photos (?) -- we are unsure if we can get the capability to store images somewhere, so this feature might be dropped
 ### (8) Other information 
