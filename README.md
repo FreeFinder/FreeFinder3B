@@ -16,7 +16,7 @@ We've implemented the following use cases:
 ### (6) Who did what: who paired with who, which part is implemented by which pair
 ### (7) Changes: design changes or unit test changes from earlier milestones
 We are not implementing the ability to upload a photo in this iteration. 
-Iteration 2 will include the following features:
+Iteration 2 will (hopefully) include the following features:
 * Notifications (and preferences)
 * Filtering
 * UI/UX Improvements
