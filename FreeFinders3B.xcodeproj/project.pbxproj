@@ -16,7 +16,6 @@
 		484DC4A92919C84700AE095B /* FreeFinders3BTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484DC4A82919C84700AE095B /* FreeFinders3BTests.swift */; };
 		484DC4B32919C84700AE095B /* FreeFinders3BUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484DC4B22919C84700AE095B /* FreeFinders3BUITests.swift */; };
 		484DC4B52919C84700AE095B /* FreeFinders3BUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484DC4B42919C84700AE095B /* FreeFinders3BUITestsLaunchTests.swift */; };
-		48C191C9291B7197000466F7 /* Map Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C191C8291B7196000466F7 /* Map Tests.swift */; };
 		48D16F33291BB3D9005CECEF /* Mapkit Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D16F32291BB3D9005CECEF /* Mapkit Tests.swift */; };
 		48D16F35291BB5FD005CECEF /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 48D16F34291BB5FD005CECEF /* Realm */; };
 		48D16F37291BB600005CECEF /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 48D16F36291BB600005CECEF /* RealmSwift */; };
@@ -398,7 +397,6 @@
 			files = (
 				48D16F38291BB6CB005CECEF /* Google Tests.swift in Sources */,
 				484DC4A92919C84700AE095B /* FreeFinders3BTests.swift in Sources */,
-				48C191C9291B7197000466F7 /* Map Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
