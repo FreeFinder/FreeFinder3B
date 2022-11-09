@@ -9,15 +9,7 @@ Press run in XCode (the play button on the top left). Alternatively, do command 
 ### (3) How to run the unit test cases
 Run command U (alternatively go to Product in the menu bar and then press test). If you run into issues where you are gettng a No module found Realm error (or something of that nature), click the FreeFinders3B main project file (top left) then under targets click FreeFinder3BTests then click Build Phases. Go to link binary with libraries and click the + buttin and then add RealmSwift and Realm. If you don't have those packages to add, follow the add package dependencies step outline above. 
 ### (4) Some acceptance tests to try (i.e., what inputs to use, and what outputs are expected)
-Try creating an item! For creating an item, we have the following conditions:
-* 0 < title length < 100
-* 0 < description length < 280
-
-Try signing in. For signing in:
-* email must be @uchicagoe.edu email
-
-Try commenting on a post (if you have created one) For commenting:
-* Comment length must be > 0 
+We suggest playing around with the different views, as you have the option to find the same items through the map or the list. You can also add your own item and see it appear on the map! Once you add an item, you can comment any thoughts about it on that item's page. 
 
 ### (5) Text description of what is implemented. You can refer to the use cases and user stories in your design document.
 We've implemented the following use cases:
