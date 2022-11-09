@@ -49,6 +49,17 @@ class ItemsTableViewController: UITableViewController {
     func tableView(_ tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         //println(tasks[indexPath.row])
         // !!!!! need to figure out how to pass id on click, and connect to the item view
+        let vc = ItemViewController(nibName: "ItemViewController", bundle: nil);
+        let item_fromtable = items[indexPath.row];
+       // vc.passed_item = item_fromtable;
+        
+        vc.itemcoor = item_fromtable.coordinate;
+        vc.itemname = item_fromtable.name;
+        vc.itemdetail = item_fromtable.detail;
+        vc.itemcomments = item_fromtable.comments;
+        //vc.passed_item = item_fromtable;
+        
+        navigationController?.pushViewController(vc, animated: true);
 
     }
 
