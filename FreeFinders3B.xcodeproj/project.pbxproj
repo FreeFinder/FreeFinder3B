@@ -386,7 +386,6 @@
 			files = (
 				484DC4A92919C84700AE095B /* FreeFinders3BTests.swift in Sources */,
 				48C191C9291B7197000466F7 /* Map Tests.swift in Sources */,
-				48C191CD291B773E000466F7 /* Google Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
