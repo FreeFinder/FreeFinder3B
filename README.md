@@ -10,7 +10,7 @@ We've implemented the following use cases:
 * Delete item
 * Comment on post
 * Refresh map
-* Sign in/out
+* Sign in
 * View map/list
 * View posting
 ### (6) Who did what: who paired with who, which part is implemented by which pair
@@ -20,5 +20,6 @@ Iteration 2 will include the following features:
 * Notifications (and preferences)
 * Filtering
 * UI/UX Improvements
+* Sign out
 * Adding photos (?) -- we are unsure if we can get the capability to store images somewhere, so this feature might be dropped
 ### (8) Other information 
