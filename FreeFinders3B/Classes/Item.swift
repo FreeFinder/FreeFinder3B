@@ -154,32 +154,6 @@ class Item: NSObject, MKAnnotation{
         return res;
     }
     
-   func db_get_comments() -> [String] {
-        // get current comments
-        return []
-    }
-    
-    func db_add_comment(comment : String) {
-        // add passed comment to db
-    }
-    
-    func add_Comment(comment : String) async -> Bool{
-        if (comment == ""){
-            return false
-        }
-        else {
-            if (await db_item_exists()) {
-                self.comments.append(comment)
-                self.db_add_comment(comment: comment)
-                await refresh()
-                return true
-            }
-            else{
-                return false
-            }
-        }
-    }
-    
     func delete_Item() async {
         //deletes if item in database 
         if (await self.db_item_exists()){
@@ -187,4 +161,64 @@ class Item: NSObject, MKAnnotation{
             await refresh()
         }
     }
+    
+    
+    func db_get_comments() async -> [String] {
+        var rv: [String] = []
+        do {
+            let app = App(id: APP_ID);
+            let user = try await app.login(credentials: Credentials.anonymous);
+            // fetch the DB
+            let client = app.currentUser!.mongoClient("mongodb-atlas")
+            let database = client.database(named: "freeFinder")
+            let items = database.collection(withName: "items")
+            
+            let item: Document = [
+                "name": AnyBSON(stringLiteral: self.name),
+                "longitude": AnyBSON(stringLiteral: String(self.coordinate.longitude)),
+                "latitude": AnyBSON(stringLiteral: String(self.coordinate.latitude)),
+            ]
+            
+            let selected_item = try await items.findOneDocument(filter: item)
+            if(selected_item == nil){
+                print("Could not find the item you were searching for.")
+                return rv;
+            }
+            rv : [String] = (!selected_item["comments"]!!?).arrayValue!;
+            
+        } catch {
+            print("Comment retrieval failed: \(error.localizedDescription)")
+        }
+        return rv
+    }
+
+    func db_add_comment(comment: String) async {
+        do {
+            let app = App(id: APP_ID);
+            let user = try await app.login(credentials: Credentials.anonymous);
+            // fetch the DB
+            let client = app.currentUser!.mongoClient("mongodb-atlas")
+            let database = client.database(named: "freeFinder")
+            let items = database.collection(withName: "items")
+            
+            let item: Document = [
+                "name": AnyBSON(stringLiteral: self.name),
+                "longitude": AnyBSON(stringLiteral: String(self.coordinate.longitude)),
+                "latitude": AnyBSON(stringLiteral: String(self.coordinate.latitude)),
+            ]
+            
+            var curr_comments = (item["comments"]!!).arrayValue;
+            
+            let commentId = try await items.updateOneDocument(
+                filter: item,
+                update: ["comments": curr_comments!.append(AnyBSON(comment))]
+            )
+            
+        } catch {
+            print("Comment add failed:
+                \(error.localizedDescription)")
+        }
+    }
+
+                  
 }

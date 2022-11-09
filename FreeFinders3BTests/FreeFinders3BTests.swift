@@ -61,45 +61,45 @@ final class FreeFinders3BTests: XCTestCase {
         //test cases are the same but the syntax and coding has changed due to changing our database from firebase to MongoDB and separating the use cases functions and database calls
           
         //set up users and items for testing
-//        let test_user2 = await User(email: "mongodb@gmail.com");
-//        let observer = await AppData(user: test_user2);
-//
-//        let v_item = await test_user2.create_item(name: "test_item", type: "test_type", detail: "test_detail",  coordinate: CLLocationCoordinate2DMake(90.000, 135.000), quantity: 1)
-//
-//        let items = await observer.db_get_all_items()
-//
-//
-//
-//        let test_item = items[0]
-//        let bad_item = await Item(name: "not_in_the_database", type: "test_type", detail: "test_detail",  coordinate: CLLocationCoordinate2DMake(90.000, 135.000), creator_email: "mongodb@gmail.com")
-//
-//        // get initial state of the comments for test_item
-//        let initial_comments = test_item.db_get_comments()
-//
-//        // false: empty comment with no previous comments
-//        let res = await test_user2.comment(i: test_item, comment: "")
-//        XCTAssertFalse(res)
-//
-//        // false: valid comment but not valid item
-//        let res2 = await test_user2.comment(i: bad_item, comment: "fail")
-//        XCTAssertFalse(res2)
-//
-//        //true: valid comment and item
-//        let res3 = await test_user2.comment(i: test_item, comment: "first comment")
-//        XCTAssertTrue(res3)
-//        var new_comments = test_item.db_get_comments()
-//        let i = initial_comments.count
-//        XCTAssertEqual("first comment", new_comments[i-1])
-//
-//        //true: valid comment and item 2, make sure both comments are in database
-//        let res4 = await test_user2.comment(i: test_item, comment: "second comment")
-//        XCTAssertTrue(res4)
-//        new_comments = test_item.db_get_comments()
-//        XCTAssertEqual("second comment", new_comments[i])
-//
-//        //false: invalid comment, previous comments
-//        let res5 = await test_user2.comment(i: test_item, comment: "")
-//        XCTAssertFalse(res5)
+        let test_user2 = await User(email: "mongodb@gmail.com");
+        let observer = await AppData(user: test_user2);
+
+        let v_item = await test_user2.create_item(name: "test_item", type: "test_type", detail: "test_detail",  coordinate: CLLocationCoordinate2DMake(90.000, 135.000), quantity: 1)
+
+        let items = await observer.db_get_all_items()
+
+
+
+        let test_item = items[0]
+        let bad_item = await Item(name: "not_in_the_database", type: "test_type", detail: "test_detail",  coordinate: CLLocationCoordinate2DMake(90.000, 135.000), creator_email: "mongodb@gmail.com")
+
+        // get initial state of the comments for test_item
+        let initial_comments = test_item.db_get_comments()
+
+        // false: empty comment with no previous comments
+        let res = await test_user2.comment(i: test_item, comment: "")
+        XCTAssertFalse(res)
+
+        // false: valid comment but not valid item
+        let res2 = await test_user2.comment(i: bad_item, comment: "fail")
+        XCTAssertFalse(res2)
+
+        //true: valid comment and item
+        let res3 = await test_user2.comment(i: test_item, comment: "first comment")
+        XCTAssertTrue(res3)
+        var new_comments = test_item.db_get_comments()
+        let i = initial_comments.count
+        XCTAssertEqual("first comment", new_comments[i-1])
+
+        //true: valid comment and item 2, make sure both comments are in database
+        let res4 = await test_user2.comment(i: test_item, comment: "second comment")
+        XCTAssertTrue(res4)
+        new_comments = test_item.db_get_comments()
+        XCTAssertEqual("second comment", new_comments[i])
+
+        //false: invalid comment, previous comments
+        let res5 = await test_user2.comment(i: test_item, comment: "")
+        XCTAssertFalse(res5)
             
     }
     
