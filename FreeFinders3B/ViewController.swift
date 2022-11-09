@@ -15,6 +15,9 @@ class ViewController: UIViewController {
         view.insetsLayoutMarginsFromSafeArea = false
         let initialLocation = CLLocation(latitude: 41.7886, longitude: -87.5987)
         mapView.centerToLocation(initialLocation)
+        Task{
+            await refresh()
+        }
         // Do any additional setup after loading the view.
     }
 

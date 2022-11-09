@@ -7,7 +7,7 @@
 
 import Foundation
 
-
+/*
 func refresh() async -> [Item] {
     let user = await User(email: "mongodb@gmail.com");
     let observer = await AppData(user: user);
@@ -18,3 +18,4 @@ func refresh() async -> [Item] {
     }
     return items
 }
+*/
