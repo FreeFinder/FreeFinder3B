@@ -27,7 +27,8 @@ Main pairs:
 * Steven and Madhav - Backend/Database
 However,towards the end it became more of a group effort in finishing up the app. 
 ### (7) Changes: design changes or unit test changes from earlier milestones
-We are not implementing the ability to upload a photo in this iteration. For this iteration, we've made the counter fixed at one. Incrementing this and chainging it will come in the later iteration. For the classes, in general, for every function that requires database access we have a new function that is db_function that just handles the database side. In addition, we added comment and create_item to the user class. 
+We are not implementing the ability to upload a photo in this iteration. For this iteration, we've made the counter fixed at one. Incrementing this and chainging it will come in the later iteration. For the classes, in general, for every function that requires database access we have a new function that is db_function that just handles the database side. In addition, we added comment and create_item to the user class. Comment and sign_out now return boolean and create_item (under user) returns the Item if it is successfully added. 
+
 Iteration 2 will (hopefully) include the following features:
 * Notifications (and preferences)
 * Filtering
