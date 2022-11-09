@@ -128,4 +128,15 @@ final class FreeFinders3BTests: XCTestCase {
         XCTAssertTrue(res2)
         
     }
+    
+    func testSignIn() async throws{
+        //will create two users, one with valid email one without.
+        let goodUser = await sign_in(email: "cbgravitt@uchicago.edu")
+        XCTAssertEqual(goodUser!.email, "cbgravitt@uchicago.edu")
+        
+        //invalid users can't sign in, return null
+        let badUser = await sign_in(email: "cbgravitt@google.com")
+        XCTAssertNil(badUser)
+
+    }
 }

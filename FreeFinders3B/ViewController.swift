@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.insetsLayoutMarginsFromSafeArea = false
-        let initialLocation = CLLocation(latitude: 41.7886, longitude: 87.5987)
+        let initialLocation = CLLocation(latitude: 41.7886, longitude: -87.5987)
         mapView.centerToLocation(initialLocation)
         // Do any additional setup after loading the view.
     }
