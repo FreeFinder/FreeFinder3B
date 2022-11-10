@@ -63,9 +63,8 @@ class User {
         return nil
     }
     
-    func comment(i: Item, comment: String) async -> Bool{
-        return await i.add_Comment(comment: comment)
-
+    func comment(i: Item, comment: String) async {
+//        return await i.add_Comment(comment: comment)
     }
     func sign_out() -> Bool{
 //        GIDSignIn.sharedInstance?.signOut()

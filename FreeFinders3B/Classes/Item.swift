@@ -11,7 +11,7 @@ import SwiftUI
 import MapKit
 import RealmSwift
 
-let APP_ID = "freefinderapp-fggaw";
+
 
 class Item: NSObject, MKAnnotation{
     let name: String
@@ -163,60 +163,60 @@ class Item: NSObject, MKAnnotation{
     }
     
     
-    func db_get_comments() async -> [String] {
-        var rv: [String] = []
-        do {
-            let app = App(id: APP_ID);
-            let user = try await app.login(credentials: Credentials.anonymous);
-            // fetch the DB
-            let client = app.currentUser!.mongoClient("mongodb-atlas")
-            let database = client.database(named: "freeFinder")
-            let items = database.collection(withName: "items")
-            
-            let item: Document = [
-                "name": AnyBSON(stringLiteral: self.name),
-                "longitude": AnyBSON(stringLiteral: String(self.coordinate.longitude)),
-                "latitude": AnyBSON(stringLiteral: String(self.coordinate.latitude)),
-            ]
-            
-            let selected_item = try await items.findOneDocument(filter: item)
-            if(selected_item == nil){
-                print("Could not find the item you were searching for.")
-                return rv;
-            }
-            rv : [String] = (!selected_item["comments"]!!?).arrayValue!;
-            
-        } catch {
-            print("Comment retrieval failed: \(error.localizedDescription)")
-        }
-        return rv
+    func db_get_comments() async  {
+//        var rv: [String] = []
+//        do {
+//            let app = App(id: APP_ID);
+//            let user = try await app.login(credentials: Credentials.anonymous);
+//            // fetch the DB
+//            let client = app.currentUser!.mongoClient("mongodb-atlas")
+//            let database = client.database(named: "freeFinder")
+//            let items = database.collection(withName: "items")
+//
+//            let item: Document = [
+//                "name": AnyBSON(stringLiteral: self.name),
+//                "longitude": AnyBSON(stringLiteral: String(self.coordinate.longitude)),
+//                "latitude": AnyBSON(stringLiteral: String(self.coordinate.latitude)),
+//            ]
+//
+//            let selected_item = try await items.findOneDocument(filter: item)
+//            if(selected_item == nil){
+//                print("Could not find the item you were searching for.")
+//                return rv;
+//            }
+//            rv : [String] = (!selected_item["comments"]!!?).arrayValue!;
+//
+//        } catch {
+//            print("Comment retrieval failed: \(error.localizedDescription)")
+//        }
+//        return rv
     }
 
     func db_add_comment(comment: String) async {
-        do {
-            let app = App(id: APP_ID);
-            let user = try await app.login(credentials: Credentials.anonymous);
-            // fetch the DB
-            let client = app.currentUser!.mongoClient("mongodb-atlas")
-            let database = client.database(named: "freeFinder")
-            let items = database.collection(withName: "items")
-            
-            let item: Document = [
-                "name": AnyBSON(stringLiteral: self.name),
-                "longitude": AnyBSON(stringLiteral: String(self.coordinate.longitude)),
-                "latitude": AnyBSON(stringLiteral: String(self.coordinate.latitude)),
-            ]
-            
-            var curr_comments = (item["comments"]!!).arrayValue;
-            
-            let commentId = try await items.updateOneDocument(
-                filter: item,
-                update: ["comments": curr_comments!.append(AnyBSON(comment))]
-            )
-            
-        } catch {
-            print("Comment add failed: \(error.localizedDescription)")
-        }
+//        do {
+//            let app = App(id: APP_ID);
+//            let user = try await app.login(credentials: Credentials.anonymous);
+//            // fetch the DB
+//            let client = app.currentUser!.mongoClient("mongodb-atlas")
+//            let database = client.database(named: "freeFinder")
+//            let items = database.collection(withName: "items")
+//
+//            let item: Document = [
+//                "name": AnyBSON(stringLiteral: self.name),
+//                "longitude": AnyBSON(stringLiteral: String(self.coordinate.longitude)),
+//                "latitude": AnyBSON(stringLiteral: String(self.coordinate.latitude)),
+//            ]
+//
+//            var curr_comments = (item["comments"]!!).arrayValue;
+//
+//            let commentId = try await items.updateOneDocument(
+//                filter: item,
+//                update: ["comments": curr_comments!.append(AnyBSON(comment))]
+//            )
+//
+//        } catch {
+//            print("Comment add failed: \(error.localizedDescription)")
+//        }
     }
 
                   
