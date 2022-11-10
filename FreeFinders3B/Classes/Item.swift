@@ -215,8 +215,7 @@ class Item: NSObject, MKAnnotation{
             )
             
         } catch {
-            print("Comment add failed:
-                \(error.localizedDescription)")
+            print("Comment add failed: \(error.localizedDescription)")
         }
     }
 
